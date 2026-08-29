@@ -1,6 +1,6 @@
 # INR Wizard website
 
-Public website, privacy policy, and support information for INR Wizard.
+Public marketing website, INR explainer, feature guide, privacy policy, and Help Centre for INR Wizard.
 
 - Website: <https://www.inrwizard.com/>
 - Privacy: <https://www.inrwizard.com/privacy/>
