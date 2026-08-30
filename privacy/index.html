@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy · INR Wizard</title>
-    <meta name="description" content="How INR Wizard protects patient-entered INR, treatment, dose, and symptom records.">
+    <meta name="description" content="How INR Wizard Build 4 handles patient-entered INR, treatment, reminder, dose, symptom, report, and encrypted backup data.">
     <meta name="theme-color" content="#f5f5fa" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#111116" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://www.inrwizard.com/privacy/">
     <link rel="icon" href="/assets/app-icon.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/app-icon.png">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css?v=4">
     <meta property="og:type" content="website">
     <meta property="og:title" content="INR Wizard Privacy Policy">
-    <meta property="og:description" content="INR Wizard keeps the live health journal on the iPhone, without developer tracking or advertising.">
+    <meta property="og:description" content="INR Wizard keeps the live health journal in protected iPhone storage, without developer tracking, advertising, or a record server.">
     <meta property="og:url" content="https://www.inrwizard.com/privacy/">
     <meta property="og:image" content="https://www.inrwizard.com/assets/og.png">
     <meta property="og:image:width" content="1200">
@@ -41,12 +41,13 @@
         <p class="eyebrow">Privacy Policy</p>
         <h1 id="page-title">Your health journal stays under your control.</h1>
         <p class="hero-copy">
-          INR Wizard is designed to keep live records on your iPhone. There are no developer
-          accounts, advertising trackers, or analytics services behind the app.
+          INR Wizard stores the live journal in protected app storage on your iPhone and does not
+          synchronize it to a developer-operated server. There are no developer accounts,
+          advertising trackers, or analytics services inside the app.
         </p>
         <div class="policy-meta" aria-label="Policy details">
           <span>Effective 30 August 2026</span>
-          <span>INR Wizard 1.0 Beta</span>
+          <span>INR Wizard 1.0 (Beta), Build 4</span>
         </div>
       </section>
 
@@ -54,7 +55,7 @@
         <article class="safeguard-card">
           <div class="safeguard-icon" aria-hidden="true">●</div>
           <h2>Stored on your iPhone</h2>
-          <p>Your live journal is stored locally inside INR Wizard. The app does not operate a cloud account or developer server for your records.</p>
+          <p>Your live journal is stored inside protected app storage. It is not synchronized through CloudKit or a developer-operated record server. iOS may include app data in an iPhone device backup if you enable one.</p>
         </article>
         <article class="safeguard-card blue">
           <div class="safeguard-icon" aria-hidden="true">◒</div>
@@ -64,7 +65,7 @@
         <article class="safeguard-card green">
           <div class="safeguard-icon" aria-hidden="true">↑</div>
           <h2>Sharing is your choice</h2>
-          <p>Reports and encrypted backups leave the app only when you choose a destination through Apple’s standard sharing or Files interface.</p>
+          <p>Reports and manually exported encrypted backups leave the app only when you choose a destination through Apple’s standard sharing or Files interface.</p>
         </article>
       </section>
 
@@ -87,40 +88,42 @@
         <article id="information" class="policy-section">
           <h2>Information handled by the app</h2>
           <div>
-            <p>INR Wizard can store information that you enter, including a patient name, date of birth, height, weight, clinician details, INR measurements, anticoagulant information, prescribed schedules, dose records, symptom check-ins, reminder settings, and notes. BMI is calculated on the device from the height and weight entered in the profile.</p>
-            <p>This information is sensitive health information. It is kept in the app’s protected local storage and is not transmitted to the developer.</p>
+            <p>INR Wizard can store information that you enter, including a patient name, date of birth, height, weight, clinician details, INR measurements, anticoagulant information, prescribed schedules, dose records, symptom check-ins, home and laboratory testing-reminder schedules, range-alert and dose-reminder preferences, selected app language, automatic-backup preferences, and notes. BMI is calculated on the device from the height and weight entered in the profile.</p>
+            <p>This is sensitive health information. It is kept in the app’s protected local storage and is not transmitted to the developer by INR Wizard. Images on this public Help Centre use fictional demonstration data, not a live patient journal.</p>
           </div>
         </article>
 
         <article id="collection" class="policy-section">
           <h2>Data collection and tracking</h2>
           <div>
-            <p>The developer does not collect data from INR Wizard. The app has no user account, advertising, cross-app tracking, analytics service, or developer-operated server. It does not use HealthKit or automatically synchronize the journal through CloudKit.</p>
-            <p>Diagnostic information may be available to Apple if you separately choose to share device analytics or TestFlight feedback with Apple. Apple controls that processing under its own privacy terms.</p>
+            <p>The app has no user account, advertising, cross-app tracking, analytics service, or developer-operated record server. It does not use HealthKit or automatically synchronize the journal through CloudKit.</p>
+            <p>While you use a TestFlight beta, Apple automatically collects crash logs and usage information and shares them with the app provider. Feedback you submit through TestFlight, including comments, screenshots, and related tester and device details, may also be shared. Avoid including patient records or other sensitive health information in feedback or screenshots. The developer uses TestFlight information only to test, diagnose, and improve INR Wizard. Apple controls this processing under its <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight privacy notice</a>.</p>
+            <p>The app does not use CloudKit synchronization. If iCloud Backup or a computer backup is enabled for the iPhone, iOS may include the app’s live data in that device backup under Apple’s controls and your device settings. See <a href="https://support.apple.com/108922">Apple’s information about what iCloud backs up</a>.</p>
           </div>
         </article>
 
         <article id="reports" class="policy-section">
           <h2>Reports and sharing</h2>
           <div>
-            <p>PDF reports are created on the device. A report leaves INR Wizard only when you choose to share, save, print, or send it. The recipient or service you select then handles that copy under its own privacy and security practices.</p>
-            <p>Reports can contain patient, clinician, INR, treatment, dose, and symptom information. Review the destination carefully before sharing.</p>
+            <p>PDF reports are created on the device as unencrypted files in protected temporary app storage. INR Wizard normally removes generated report files after about 24 hours when cleanup next runs, and reset or a full restore removes its generated copies.</p>
+            <p>A report leaves INR Wizard only when you choose to share, save, print, or send it. Reports can contain patient, clinician, INR, treatment, dose, and symptom information. Review the destination carefully. A copy saved, printed, or sent outside the app is handled by that destination and cannot be erased by INR Wizard.</p>
           </div>
         </article>
 
         <article id="backup" class="policy-section">
           <h2>Encrypted backup and restore</h2>
           <div>
-            <p>Backup files are encrypted using the password you provide. INR Wizard does not transmit, store remotely, or recover that password. If the password is lost, the developer cannot restore the backup for you.</p>
-            <p>You select where an exported backup is saved using Apple’s Files interface. If you choose iCloud Drive or another storage provider, that provider receives and stores the encrypted file under its own terms. The developer does not receive it.</p>
+            <p><strong>Manual backup:</strong> an exported backup is encrypted using the password you provide. INR Wizard does not retain, transmit, or recover that manual-backup password. You choose the destination in Apple’s Files interface. The selected provider stores the encrypted file under its own terms; the developer does not receive it.</p>
+            <p><strong>Automatic backup:</strong> this optional feature keeps one encrypted rolling file inside INR Wizard and replaces the same file after each successful run. Its password is stored only in this iPhone’s device-only Keychain so the app can run the backup. It is never sent to the developer, and the developer cannot recover it. The rolling file is marked to be excluded from device backup. iOS controls exact background timing, so the app also checks when it opens.</p>
+            <p>Turning automatic backup off, resetting all app data, or completing a full restore removes the rolling file and its saved password. Keep a separately exported encrypted backup in a trusted place if losing the iPhone or app would otherwise remove your only copy.</p>
           </div>
         </article>
 
         <article id="notifications" class="policy-section">
           <h2>Notifications</h2>
           <div>
-            <p>Medication reminders and recorded-range alerts are scheduled locally on the iPhone and use generic notification text. Patient name, medicine, dose, and INR value are not included in the notification body. Open INR Wizard to review the relevant reminder or saved record.</p>
-            <p>INR Wizard may request permission for Time Sensitive notifications. It does not use Critical Alerts. Notifications can be changed or disabled at any time.</p>
+            <p>Dose reminders, home and laboratory INR-testing reminders, measured-result range alerts, and the built-in reminder sound test are scheduled locally. Their generic lock-screen text does not include patient name, medicine, dose, or INR value.</p>
+            <p>Dose reminders and the sound test are marked Time Sensitive. Testing reminders and range alerts are ordinary notifications. All use the standard iPhone sound when Sounds are enabled. Focus, Silent mode, notification settings, device state, and iOS can silence, delay, or prevent delivery. INR Wizard does not use Critical Alerts.</p>
           </div>
         </article>
 
@@ -128,7 +131,8 @@
           <h2>Protection and retention</h2>
           <div>
             <p>INR Wizard uses Apple’s complete file-protection class for its app data. Device security also depends on your iPhone passcode, Apple Account security, operating-system updates, and the destinations to which you export files.</p>
-            <p>Records remain until you edit or delete them, reset the app, or remove the app from the iPhone. Exported reports and manually saved backups are separate files and must be deleted from their destinations by you.</p>
+            <p>Records remain until you edit or delete them, reset the app, or remove the app from the iPhone. The rolling backup retains one latest encrypted snapshot; a recently corrected or deleted record may remain in that prior snapshot until the next successful backup replaces it. Turning automatic backup off or resetting removes the rolling file and saved password.</p>
+            <p>Exported reports and manually saved backups are separate files and must be deleted from their destinations by you. Device-backup copies are controlled through Apple’s iPhone, iCloud, or computer-backup settings.</p>
           </div>
         </article>
 
@@ -137,8 +141,9 @@
           <div>
             <ul>
               <li>Review, correct, or delete records from within INR Wizard.</li>
-              <li>Change reminder and notification permissions in iOS Settings.</li>
-              <li>Create an encrypted backup before replacing or erasing data.</li>
+              <li>Review notification readiness, send a generic sound test, and open iPhone notification settings.</li>
+              <li>Change dose, testing-reminder, range-alert, and automatic-backup preferences.</li>
+              <li>Create a manual encrypted backup before replacing or erasing data.</li>
               <li>Use Reset All Data when preparing the app for another person.</li>
               <li>Delete exported reports and backups from the places you saved them.</li>
             </ul>
@@ -148,7 +153,7 @@
         <article id="medical" class="policy-section">
           <h2>Medical safety</h2>
           <div>
-            <p>INR Wizard is a patient-entered record and reporting tool. It does not diagnose a condition, determine whether a result is safe, calculate or recommend a medication dose, or replace a clinician, laboratory test, prescription label, or emergency service.</p>
+            <p>INR Wizard is a patient-entered record and reporting tool. It does not provide individual medical or dosing advice, diagnose a condition, determine whether a result is safe, calculate or recommend a medication dose, choose a testing interval, or replace a clinician, laboratory test, prescription label, or emergency service.</p>
             <p>Do not change Warfarin or another anticoagulant based on the app. When a treatment decision depends on an INR result, follow the instructions of the appropriate healthcare professional and obtain laboratory confirmation when advised.</p>
           </div>
         </article>
@@ -163,7 +168,7 @@
         <article id="contact" class="policy-section contact-section">
           <h2>Contact</h2>
           <div>
-            <p>Questions about this policy or INR Wizard’s privacy practices can be sent to:</p>
+            <p>Questions about this policy or INR Wizard’s privacy practices can be sent to the address below. Emailing support gives the developer your sender address, message, and any attachments, and the email provider handles those items under its terms. They may be retained as reasonably needed to answer or investigate the request. Do not send patient records, backup passwords, or unnecessary health screenshots. You may ask for support correspondence to be deleted, subject to technical, legal, or provider-backup limits.</p>
             <p><strong>Kudige Panduranga Shenoy</strong><br><a href="mailto:kudige@icloud.com?subject=INR%20Wizard%20Privacy">kudige@icloud.com</a></p>
           </div>
         </article>
@@ -171,14 +176,14 @@
 
       <aside class="notice" aria-label="Policy scope notice">
         <span class="notice-symbol" aria-hidden="true">i</span>
-        <p>This policy describes the current INR Wizard 1.0 Beta implementation and will be reviewed alongside the app before public App Store release.</p>
+        <p>This policy describes INR Wizard 1.0 (Beta), Build 4 and will be reviewed alongside the app before public App Store release.</p>
       </aside>
     </main>
 
     <footer class="site-footer">
       <div class="footer-brand">
         <img class="footer-icon" src="/assets/app-icon.png" alt="" width="36" height="36">
-        <div><strong>INR Wizard Privacy Policy</strong><span>How the 1.0 Beta handles patient-entered information</span></div>
+        <div><strong>INR Wizard Privacy Policy</strong><span>How Build 4 handles patient-entered information</span></div>
       </div>
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
@@ -186,7 +191,7 @@
         <a href="/#features">Features</a>
         <a href="/support/">Help</a>
       </nav>
-      <p class="footer-disclaimer">INR Wizard does not provide medical advice or medication recommendations.</p>
+      <p class="footer-disclaimer">INR Wizard does not provide individual medical advice or medication recommendations.</p>
     </footer>
   </body>
 </html>

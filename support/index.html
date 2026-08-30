@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Help Centre · INR Wizard</title>
-    <meta name="description" content="Plain-language help for INR Wizard, including INR records, comparisons, Warfarin schedules, dose reminders, reports, backup, restore, and privacy.">
+    <meta name="description" content="Plain-language, illustrated help for INR Wizard Build 4, including INR records, testing and dose reminders, sound checks, schedules, reports, backup, restore, safety, and privacy.">
     <meta name="theme-color" content="#f5f5fa" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#111116" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://www.inrwizard.com/support/">
     <link rel="icon" href="/assets/app-icon.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/app-icon.png">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css?v=4">
     <meta property="og:type" content="website">
     <meta property="og:title" content="INR Wizard Help Centre">
-    <meta property="og:description" content="Step-by-step help for recording INR, schedules, doses, symptoms, reports, reminders, and backups.">
+    <meta property="og:description" content="Illustrated, step-by-step help for recording INR, schedules, doses, symptoms, reports, reminders, sound checks, and backups.">
     <meta property="og:url" content="https://www.inrwizard.com/support/">
     <meta property="og:image" content="https://www.inrwizard.com/assets/og.png">
     <meta property="og:image:width" content="1200">
@@ -41,13 +41,14 @@
         <p class="eyebrow">Help Centre</p>
         <h1 id="support-title">Clear help, one task at a time.</h1>
         <p class="hero-copy">
-          Find straightforward answers for setting up INR Wizard, recording results and doses,
-          managing reminders, creating reports, and protecting the journal.
+          Find straightforward answers and current-interface pictures for setting up INR Wizard,
+          recording results and doses, managing testing and dose reminders, checking sound,
+          creating reports, and protecting the journal.
         </p>
         <div class="policy-meta" aria-label="Help details">
-          <span>INR Wizard 1.0 Beta</span>
+          <span>INR Wizard 1.0 (Beta), Build 4</span>
           <span>Technical support</span>
-          <span>No medical advice</span>
+          <span>No individual medical advice</span>
         </div>
       </section>
 
@@ -62,7 +63,7 @@
           <a href="#daily-record"><span aria-hidden="true">✓</span><strong>Doses and symptoms</strong><small>Keep the actual daily record</small></a>
           <a href="#reports"><span aria-hidden="true">PDF</span><strong>Reports and sharing</strong><small>Create and preview a date-range report</small></a>
           <a href="#backup"><span aria-hidden="true">⌁</span><strong>Backup and restore</strong><small>Protect or replace the journal</small></a>
-          <a href="#troubleshooting"><span aria-hidden="true">?</span><strong>Reminders and problems</strong><small>Work through common technical issues</small></a>
+          <a href="#reminders"><span aria-hidden="true">⏱</span><strong>Reminders and sound</strong><small>Dose, home-test, and laboratory-test reminders</small></a>
         </div>
       </section>
 
@@ -77,11 +78,12 @@
       <div class="help-layout">
         <nav class="help-contents" aria-label="Help topics">
           <p>Help topics</p>
-          <a href="#about">About the app</a>
+          <a href="#about">About &amp; safety</a>
           <a href="#inr-records">INR records</a>
           <a href="#comparisons">Comparisons and range</a>
           <a href="#treatments">Treatments and schedules</a>
-          <a href="#reminders">Dose reminders</a>
+          <a href="#reminders">Dose reminders &amp; sound</a>
+          <a href="#testing-reminders">Testing reminders</a>
           <a href="#daily-record">Doses and symptoms</a>
           <a href="#reports">PDF reports</a>
           <a href="#language">English and Kannada</a>
@@ -93,35 +95,48 @@
         <div class="help-topics">
           <section id="about" class="help-topic" aria-labelledby="about-title">
             <p class="section-kicker">Start here</p>
-            <h2 id="about-title">About INR Wizard</h2>
-            <div class="faq-list help-faq-list">
-              <details open>
-                <summary>What is INR?</summary>
-                <p>INR stands for International Normalised Ratio. It is a standardised number derived from a prothrombin-time blood test, which measures how long a clot takes to form in a blood sample. A result can come from a laboratory sample or, for an appropriately trained person, a fingertip home meter. Only the healthcare team should set and interpret the person’s target range. <a href="https://medlineplus.gov/lab-tests/prothrombin-time-test-and-inr-ptinr/">Read the MedlinePlus PT/INR overview.</a></p>
-              </details>
-              <details>
-                <summary>What does INR Wizard hope to achieve?</summary>
-                <p>The app aims to bring checked, patient-entered home and laboratory results, clinician-provided schedules, actual-dose history, symptom check-ins, and shareable reports into one iPhone journal. It helps preserve a clear history for review and clinician conversations; it does not promise a treatment result.</p>
-              </details>
-              <details>
-                <summary>Does INR Wizard measure or interpret INR?</summary>
-                <p>No. It records a result copied from a meter or laboratory report. It can flag a measured value outside the current clinician-provided range saved in the app, but it cannot verify the result, determine whether it is safe, diagnose a condition, or replace a laboratory, meter instructions, or healthcare professional.</p>
-              </details>
-              <details>
-                <summary>Can the app tell me what dose to take?</summary>
-                <p>No. It never calculates or recommends a dose, chooses tablet combinations, creates a corrected or true INR, or gives catch-up, hold, resume, increase, or decrease instructions. A schedule shown in the app is only what the patient entered from a clinician-provided source.</p>
-              </details>
-              <details>
-                <summary>Where are the main features?</summary>
-                <p><strong>Today</strong> shows recent results and common daily actions. <strong>Records</strong> contains INR history and comparisons. <strong>Dose</strong> contains schedules, reminders, and actual-dose history. <strong>Reports</strong> creates date-range PDFs. <strong>Settings</strong> contains the profile, care team, treatments, language, range alerts, backup, restore, and reset.</p>
-              </details>
+            <h2 id="about-title">About INR Wizard &amp; Safety</h2>
+            <div class="help-visual">
+              <div class="faq-list help-faq-list">
+                <details open>
+                  <summary>What is INR?</summary>
+                  <p>INR stands for International Normalised Ratio. It is a standardised number derived from a prothrombin-time blood test, which measures how long a clot takes to form in a blood sample. A result can come from a laboratory sample or, for an appropriately trained person, a fingertip home meter. Only the healthcare team should set and interpret the person’s target range. <a href="https://medlineplus.gov/lab-tests/prothrombin-time-test-and-inr-ptinr/">Read the MedlinePlus PT/INR overview.</a></p>
+                </details>
+                <details>
+                  <summary>What does INR Wizard hope to achieve?</summary>
+                  <p>The app aims to bring checked, patient-entered home and laboratory results, clinician-provided schedules, actual-dose history, symptom check-ins, reminders, and shareable reports into one iPhone journal. It helps preserve a clear history for review and clinician conversations; it does not promise a treatment result.</p>
+                </details>
+                <details>
+                  <summary>Does INR Wizard measure or interpret INR?</summary>
+                  <p>No. It records a result copied from a meter or laboratory report. It can flag a measured value outside the current clinician-provided range saved in the app, but it cannot verify the result, determine whether it is safe, diagnose a condition, or replace a laboratory, meter instructions, or healthcare professional.</p>
+                </details>
+                <details>
+                  <summary>Can the app tell me what dose to take?</summary>
+                  <p>No. It never calculates or recommends a dose, chooses tablet combinations, creates a corrected or true INR, or gives catch-up, hold, resume, increase, or decrease instructions. A schedule shown in the app is only what the patient entered from a clinician-provided source.</p>
+                </details>
+                <details>
+                  <summary>Where are the main features?</summary>
+                  <p><strong>Today</strong> shows latest home and laboratory results, recorded schedules, dose actions, symptom check-in, treatments, and a safety link. <strong>Records</strong> contains INR history and comparisons. <strong>Dose</strong> contains schedules, dose reminders, and actual-dose history. <strong>Reports</strong> creates date-range PDFs. <strong>Settings</strong> contains the profile, care team, treatments, language, testing reminders, notification readiness, range alerts, automatic and manual backup, restore, reset, and About INR Wizard &amp; Safety.</p>
+                </details>
+                <details>
+                  <summary>Where can I review the safety and privacy boundaries in the app?</summary>
+                  <p>Open Settings → <strong>About INR Wizard &amp; Safety</strong>, or use <strong>Learn more about safety and privacy</strong> on Today. The page explains INR, reminder limits, measured and estimated values, backup and sharing, medical boundaries, and emergency guidance.</p>
+                </details>
+              </div>
+              <figure class="help-figure">
+                <a href="/assets/help/setup-language.png" aria-label="Open the Patient setup screenshot at full size">
+                  <img src="/assets/help/setup-language.png" width="1206" height="2622" loading="lazy" decoding="async" alt="INR Wizard Patient setup screen with English and Kannada choices, Restore an existing backup, and Continue.">
+                </a>
+                <figcaption>Choose a language, or restore an existing journal before creating a new patient record.</figcaption>
+              </figure>
             </div>
           </section>
 
           <section id="inr-records" class="help-topic" aria-labelledby="records-title">
             <p class="section-kicker">Records</p>
             <h2 id="records-title">Adding and correcting INR results</h2>
-            <div class="faq-list help-faq-list">
+            <div class="help-visual">
+              <div class="faq-list help-faq-list">
               <details open>
                 <summary>How do I record an INR result?</summary>
                 <p>Open Today and choose <strong>Log INR</strong>, or open Records and add a record. Enter a home result, a laboratory result, or both. Use the specimen or collection date, not the date a report was downloaded. Add the exact time if known. Optional details can include meter name, strip lot, laboratory, reagent lot, and notes.</p>
@@ -142,13 +157,22 @@
                 <summary>How do I correct or delete a result?</summary>
                 <p>Tap a record to edit it. Swipe to delete and confirm. Deleting removes that entry from the journal and future reports and cancels any local range alert associated with it.</p>
               </details>
+              </div>
+              <figure class="help-figure">
+                <span class="sample-chip">Fictional sample data</span>
+                <a href="/assets/help/today-overview.png" aria-label="Open the Today screen screenshot at full size">
+                  <img src="/assets/help/today-overview.png" width="1170" height="2532" loading="lazy" decoding="async" alt="Today screen showing the Log INR button, latest home and laboratory readings, and today’s recorded schedule.">
+                </a>
+                <figcaption>From Today, tap Log INR. Values and medication shown are fictional sample data.</figcaption>
+              </figure>
             </div>
           </section>
 
           <section id="comparisons" class="help-topic" aria-labelledby="comparisons-title">
             <p class="section-kicker">Paired readings</p>
             <h2 id="comparisons-title">Comparisons and the recorded target range</h2>
-            <div class="faq-list help-faq-list">
+            <div class="help-visual help-visual-wide-copy">
+              <div class="faq-list help-faq-list">
               <details open>
                 <summary>What is a comparison pair?</summary>
                 <p>A comparison pair contains a home and laboratory measurement with exact collection times. Include them only when the two samples were deliberately collected as one pair under the same protocol. The app shows the collection gap but does not decide whether that gap is clinically acceptable.</p>
@@ -169,13 +193,22 @@
                 <summary>What if a home INR is above 4.5?</summary>
                 <p>The app directs the user to contact a healthcare professional immediately, even without bleeding symptoms, and recommends laboratory confirmation because home-meter results above 4.5 may be less reliable. Do not change Warfarin based on the app. <a href="https://www.fda.gov/medical-devices/warfarin-inr-test-meters/tips-patients-and-caregivers-using-inr-test-meters-home">Read the FDA’s home-meter safety advice.</a></p>
               </details>
+              </div>
+              <figure class="help-figure">
+                <span class="sample-chip">Fictional sample data</span>
+                <a href="/assets/help/records-comparison.png" aria-label="Open the linked INR comparison screenshot at full size">
+                  <img src="/assets/help/records-comparison.png" width="1206" height="2622" loading="lazy" decoding="async" alt="Records screen showing linked home and laboratory readings, collection gap, and signed difference.">
+                </a>
+                <figcaption>Linked entries show home minus laboratory. Fictional sample values; this is not a correction or treatment recommendation.</figcaption>
+              </figure>
             </div>
           </section>
 
           <section id="treatments" class="help-topic" aria-labelledby="treatments-title">
             <p class="section-kicker">Treatment record</p>
             <h2 id="treatments-title">Treatments and prescribed schedules</h2>
-            <div class="faq-list help-faq-list">
+            <div class="help-visual">
+              <div class="faq-list help-faq-list">
               <details open>
                 <summary>What treatment information can I keep?</summary>
                 <p>The app supports multiple anticoagulants and physicians. A treatment can include medicine name, oral or injection route, prescriber, available strengths, dosage instructions, and treatment dates. These details are patient-entered and are not electronically verified.</p>
@@ -196,28 +229,72 @@
                 <summary>Can I correct, stop, or delete a schedule?</summary>
                 <p>Use <strong>Fix a data-entry mistake</strong> only for an unused schedule. <strong>Stop schedule</strong> moves it into history, retains earlier records, and stops its reminder. <strong>Delete mistaken entry</strong> is available only when the entry is unused and has no dependent schedule history.</p>
               </details>
+              </div>
+              <figure class="help-figure">
+                <span class="sample-chip">Fictional sample data</span>
+                <a href="/assets/help/dose-schedule.png" aria-label="Open the Dose Ledger screenshot at full size">
+                  <img src="/assets/help/dose-schedule.png" width="1206" height="2622" loading="lazy" decoding="async" alt="Dose Ledger showing the current Warfarin schedule, reminder status, and Edit dose schedule action.">
+                </a>
+                <figcaption>Use Dose to review a patient-entered schedule or reminder. Medicine and amounts are fictional examples, not medical advice.</figcaption>
+              </figure>
             </div>
           </section>
 
           <section id="reminders" class="help-topic" aria-labelledby="reminders-title">
             <p class="section-kicker">Notifications</p>
-            <h2 id="reminders-title">Dose reminders</h2>
+            <h2 id="reminders-title">Dose reminders and sound</h2>
+            <div class="help-visual">
+              <div class="faq-list help-faq-list">
+                <details open>
+                  <summary>How do I turn on a dose reminder?</summary>
+                  <p>Open Dose, select the current schedule, then Reminder. Choose Off, At dose time, or Custom time. A custom reminder must differ from the recorded dose time. Reminders occur only on days whose recorded scheduled dose is above 0 mg.</p>
+                </details>
+                <details>
+                  <summary>How do I check notification and sound readiness?</summary>
+                  <p>Open Settings → <strong>Reminder notifications</strong>, or Dose → Reminder. The status panel shows whether Notifications, Sounds, and Time Sensitive delivery are available. Use <strong>Test reminder sound</strong> to schedule a generic, private test notification for about five seconds later. It contains no patient, medicine, dose, or INR details.</p>
+                </details>
+                <details>
+                  <summary>Does changing the reminder change the prescription?</summary>
+                  <p>No. Reminder time controls only the iPhone notification. It does not change the recorded dose time, weekly amounts, schedule history, or actual-dose records.</p>
+                </details>
+                <details>
+                  <summary>Why did a reminder arrive without sound or not appear?</summary>
+                  <p>Confirm the current schedule has a dose above 0 mg that day and check its reminder time. In the readiness panel, use <strong>Open iPhone Settings</strong> and allow Notifications, Sounds, and Time Sensitive Notifications. Silent mode, Focus, device state, notification settings, and iOS can still silence, delay, or prevent delivery. Reopen INR Wizard after future schedule changes so it can refresh its rolling reminder window.</p>
+                </details>
+                <details>
+                  <summary>Are dose reminders Critical Alerts?</summary>
+                  <p>No. Dose reminders and the built-in sound test are marked Time Sensitive when iPhone permits it. INR Wizard does not use Critical Alerts, and no reminder should be relied upon as an emergency alert or proof that a dose was taken.</p>
+                </details>
+              </div>
+              <figure class="help-figure">
+                <span class="sample-chip">Fictional sample data</span>
+                <a href="/assets/help/reminder-readiness.png" aria-label="Open the Dose Reminder notification-readiness screenshot at full size">
+                  <img src="/assets/help/reminder-readiness.png" width="1170" height="2532" loading="lazy" decoding="async" alt="Dose Reminder screen showing the reminder switch, notification status, Test reminder sound, and Open iPhone Settings.">
+                </a>
+                <figcaption>This screen separates the recorded dose time from the iPhone notification. Fictional schedule details.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section id="testing-reminders" class="help-topic" aria-labelledby="testing-reminders-title">
+            <p class="section-kicker">Home and laboratory testing</p>
+            <h2 id="testing-reminders-title">INR-testing reminders</h2>
             <div class="faq-list help-faq-list">
               <details open>
-                <summary>How do I turn on a reminder?</summary>
-                <p>Open Dose, select the current schedule, then Reminder. Choose Off, At dose time, or Custom time. A custom reminder must differ from the recorded dose time. Reminders occur only on days whose recorded scheduled dose is above 0 mg.</p>
+                <summary>How do I set a testing reminder?</summary>
+                <p>Open Settings → <strong>Testing reminders</strong>. Home and Laboratory reminders are independent. For each method, choose a start date and time, then Once, Weekly, or every 2, 4, 6, 8, or 12 weeks. Only copy a schedule you have chosen or received from the appropriate healthcare professional.</p>
               </details>
               <details>
-                <summary>Does changing the reminder change the prescription?</summary>
-                <p>No. Reminder time controls only the iPhone notification. It does not change the recorded dose time, weekly amounts, schedule history, or actual-dose records.</p>
+                <summary>Does INR Wizard recommend when I should test?</summary>
+                <p>No. It does not choose or recommend a testing interval, record a test automatically, mark a test as completed, or justify delaying a test if a notification is absent. Follow the testing plan supplied by the appropriate healthcare professional.</p>
               </details>
               <details>
-                <summary>Why did a reminder not appear?</summary>
-                <p>Confirm the current schedule has a dose above 0 mg that day. Check the Reminder setting and time in Dose. Then open iPhone Settings → Notifications → INR Wizard and allow Notifications, Sounds, and Time Sensitive Notifications. Reopen INR Wizard after a future schedule change so it can refresh reminders. Silent mode and Focus settings can also affect delivery.</p>
+                <summary>Are testing reminders Time Sensitive?</summary>
+                <p>No. Home and laboratory testing reminders are ordinary local notifications with generic text and the standard iPhone sound when Sounds are enabled. They are separate from Time Sensitive dose reminders and are never Critical Alerts.</p>
               </details>
               <details>
-                <summary>Are these Critical Alerts?</summary>
-                <p>No. INR Wizard may use Apple’s Time Sensitive notification setting, which the user controls. It does not use Critical Alerts, and a reminder must not be relied upon as an emergency alert.</p>
+                <summary>Why should I reopen INR Wizard?</summary>
+                <p>For repeating multi-week schedules, INR Wizard prepares reminders in a rolling window when the app opens. iOS still controls delivery, so the app should be opened regularly and a missing notification must not be treated as a reason to delay a planned test.</p>
               </details>
             </div>
           </section>
@@ -229,6 +306,10 @@
               <details open>
                 <summary>What can I record in the Actual Dose Ledger?</summary>
                 <p>Choose a treatment and today or an earlier date. Record the status as Taken, Missed, Skipped, or Not sure. When Taken is selected, enter the amount actually taken. If it differs from the planned amount, the app records the difference but gives no next-dose advice.</p>
+              </details>
+              <details>
+                <summary>Is the schedule shown on Today a recommended dose?</summary>
+                <p>No. Today shows patient-entered prescription information copied from a source recorded in the app. Use the card to record what actually happened, including a missed dose, but do not treat the display as a calculation, recommendation, or instruction to change medication.</p>
               </details>
               <details>
                 <summary>What if no recorded schedule applies?</summary>
@@ -275,15 +356,23 @@
           <section id="language" class="help-topic" aria-labelledby="language-title">
             <p class="section-kicker">Language</p>
             <h2 id="language-title">English and Kannada</h2>
-            <div class="faq-list help-faq-list">
-              <details open>
-                <summary>What changes when I switch language?</summary>
-                <p>App-owned screens, alerts, accessibility text, local notification text, and newly generated PDFs use the selected language. Patient-entered names, notes, and source text are never translated. Previously saved PDFs do not change.</p>
-              </details>
-              <details>
-                <summary>Why do Files or Share screens use another language?</summary>
-                <p>Those screens belong to iOS and follow the iPhone or per-app system language, not the language selected inside INR Wizard.</p>
-              </details>
+            <div class="help-visual">
+              <div class="faq-list help-faq-list">
+                <details open>
+                  <summary>What changes when I switch language?</summary>
+                  <p>App-owned screens, alerts, accessibility text, local notification text, and newly generated PDFs use the selected language. Patient-entered names, notes, and source text are never translated. Previously saved PDFs do not change.</p>
+                </details>
+                <details>
+                  <summary>Why do Files or Share screens use another language?</summary>
+                  <p>Those screens belong to iOS and follow the iPhone or per-app system language, not the language selected inside INR Wizard.</p>
+                </details>
+              </div>
+              <figure class="help-figure">
+                <a href="/assets/help/kannada-setup.png" aria-label="Open the Kannada Patient setup screenshot at full size">
+                  <img src="/assets/help/kannada-setup.png" width="1206" height="2622" loading="lazy" decoding="async" alt="INR Wizard Patient setup screen displayed in Kannada with Kannada selected.">
+                </a>
+                <figcaption>Kannada changes app-owned screens and new reports; patient-entered names and notes stay as typed.</figcaption>
+              </figure>
             </div>
           </section>
 
@@ -297,11 +386,15 @@
               </details>
               <details>
                 <summary>What is included in the backup?</summary>
-                <p>It includes patient and physician details, treatments, schedule versions, INR and dose history, clinician instructions, symptom check-ins, saved reminder preferences, and app language. Generated PDFs, iPhone notification permission, and the installation-specific legacy calibration are not included.</p>
+                <p>It includes patient and physician details, treatments, schedule versions, INR and dose history, clinician instructions, symptom check-ins, home and laboratory testing-reminder schedules, saved dose and range-alert preferences, and app language. Generated PDFs, automatic-backup settings and password, and iPhone notification permission are not included. A patient-specific legacy calibration is installation-bound and is not restored; the preview warns when this applies.</p>
               </details>
               <details>
                 <summary>How does the rolling automatic backup work?</summary>
-                <p>It keeps one encrypted file inside INR Wizard on this iPhone and replaces that file after each successful run. Choose daily or weekly and a preferred time, or use Back Up Now. iOS controls the exact background time, so Background App Refresh, device state, or Low Power Mode can delay it. Keep a separately exported backup as well.</p>
+                <p>It keeps one encrypted file inside INR Wizard on this iPhone and replaces that file after each successful run. Choose daily or weekly and a preferred time, or use Back Up Now. Its password is stored in this iPhone’s device-only Keychain and the rolling file is excluded from device backup. iOS controls the exact background time, so Background App Refresh, device state, or Low Power Mode can delay it. The app also checks when it opens. Keep a separately exported backup as well.</p>
+              </details>
+              <details>
+                <summary>What happens if I turn automatic backup off?</summary>
+                <p>The one rolling file and its saved device-only password are deleted. The live journal is not changed. INR Wizard cannot recover the automatic-backup password after the app is removed.</p>
               </details>
               <details>
                 <summary>How do I restore a journal?</summary>
@@ -309,11 +402,11 @@
               </details>
               <details>
                 <summary>Does restore merge two journals?</summary>
-                <p>No. Restore permanently replaces the current journal and never merges patients or histories. The complete archive is decrypted and validated before replacement. A wrong password, damaged file, or failed validation does not replace saved records.</p>
+                <p>No. Restore permanently replaces the current journal and never merges patients or histories. The complete archive is decrypted and validated before replacement. A wrong password, damaged file, or failed validation does not replace saved records. A successful restore removes cached PDFs and the previous rolling backup and password, leaves automatic backup off, and uses the current iPhone notification permission to recreate eligible saved reminders. Notification permission itself is not restored.</p>
               </details>
               <details>
                 <summary>How do I erase everything?</summary>
-                <p>Open Settings → Erase all app data, review the first warning, then type the confirmation word exactly as shown. Reset removes the live journal, generated reports, rolling backup, saved backup password, and app notifications, then returns to onboarding. Exported backups and already shared PDFs remain wherever they were saved.</p>
+                <p>Open Settings → Erase all app data, review the first warning, then type the confirmation word exactly as shown. Reset removes the live journal, generated reports, rolling backup, saved backup password, and app notifications, then returns to onboarding. It cannot erase exported Files, iCloud Drive, email, or printed copies, existing device backups controlled by Apple, support correspondence, or TestFlight data.</p>
               </details>
             </div>
           </section>
@@ -331,8 +424,8 @@
                 <p>Return to Reports and generate it again after changing records, profile details, dates, or language. Preview the new PDF before sharing.</p>
               </details>
               <details>
-                <summary>The app closed after a restore</summary>
-                <p>A successful full restore replaces the journal and requires INR Wizard to reload its data. Follow the completion message and reopen the app if requested. If it closes without a warning or the restored journal does not appear, report the problem before repeating the restore.</p>
+                <summary>What should I check after a restore?</summary>
+                <p>When the success screen appears, choose Continue, then review the restored patient, language, notification permission, and reminder schedules. If the restored journal does not match the preview or the app closes unexpectedly, contact support before repeating the restore.</p>
               </details>
               <details>
                 <summary>What should I include when reporting a problem?</summary>
@@ -344,8 +437,8 @@
           <section id="privacy-help" class="help-topic contact-help" aria-labelledby="contact-title">
             <p class="section-kicker">Privacy and support</p>
             <h2 id="contact-title">Your journal and technical support</h2>
-            <p>The live journal is stored in protected app storage on the iPhone. INR Wizard has no developer account, advertising, analytics, tracking, or developer-operated record server. A PDF or manual backup leaves the app only when the user selects a destination.</p>
-            <p>For technical support, email <a href="mailto:kudige@icloud.com?subject=INR%20Wizard%20Support">kudige@icloud.com</a>. This address is not monitored as an emergency medical service.</p>
+            <p>The live journal is stored in protected app storage on the iPhone. INR Wizard has no developer account, advertising, analytics, tracking, CloudKit journal synchronization, or developer-operated record server. If iCloud Backup or a computer backup is enabled, iOS may include live app data in that device backup. A PDF or manual backup leaves INR Wizard only when the user selects a destination; the optional rolling backup remains inside protected app storage and is excluded from device backup.</p>
+            <p>For technical support, email <a href="mailto:kudige@icloud.com?subject=INR%20Wizard%20Support">kudige@icloud.com</a>. This address is not monitored as an emergency medical service. Do not send patient records, backup passwords, or unnecessary health screenshots.</p>
             <div class="section-actions">
               <a class="button primary" href="mailto:kudige@icloud.com?subject=INR%20Wizard%20Support">Email technical support</a>
               <a class="button" href="/privacy/">Read the privacy policy</a>
@@ -358,7 +451,7 @@
     <footer class="site-footer">
       <div class="footer-brand">
         <img class="footer-icon" src="/assets/app-icon.png" alt="" width="36" height="36">
-        <div><strong>INR Wizard Help Centre</strong><span>Technical help for the 1.0 Beta</span></div>
+        <div><strong>INR Wizard Help Centre</strong><span>Illustrated technical help for Build 4</span></div>
       </div>
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>

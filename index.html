@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>INR Wizard · INR and anticoagulant journal for iPhone</title>
-    <meta name="description" content="Learn what an INR blood-clotting result means and how INR Wizard helps patients keep home and laboratory results, prescribed Warfarin schedules, dose records, symptoms, and reports together.">
+    <meta name="description" content="Learn what an INR blood-clotting result means and how INR Wizard helps patients keep home and laboratory results, prescribed Warfarin schedules, dose records, reminders, symptoms, and reports together.">
     <meta name="theme-color" content="#f5f5fa" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#111116" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://www.inrwizard.com/">
     <link rel="icon" href="/assets/app-icon.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/app-icon.png">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css?v=4">
     <meta property="og:type" content="website">
     <meta property="og:title" content="INR Wizard for iPhone">
     <meta property="og:description" content="Keep INR results, clinician-provided schedules, actual dose records, symptoms, and shareable reports in one clear journal.">
@@ -47,7 +47,7 @@
             clinician-provided schedules, actual dose records, and symptoms together.
           </p>
           <div class="policy-meta" aria-label="App details">
-            <span>Version 1.0 Beta</span>
+            <span>Version 1.0 (Beta), Build 4</span>
             <span>Patient-entered records</span>
             <span>English and Kannada</span>
           </div>
@@ -66,7 +66,7 @@
           </div>
           <div class="visual-card visual-card-bottom" aria-hidden="true">
             <span>Today</span>
-            <strong>Dose + symptoms</strong>
+            <strong>INR + schedules + symptoms</strong>
           </div>
         </div>
       </section>
@@ -190,33 +190,43 @@
           </article>
           <article class="detail-card">
             <div class="feature-icon" aria-hidden="true">⏱</div>
-            <h3>Time-specific reminders</h3>
-            <p>Choose a reminder at the recorded dose time or at a separate notification time. Reminders are scheduled locally and can use Apple’s Time Sensitive notification setting.</p>
+            <h3>Dose reminders and sound check</h3>
+            <p>Choose a reminder at the recorded dose time or a separate notification time. Dose reminders are marked Time Sensitive when iPhone permits it, but are not Critical Alerts. Check notification, Sounds, and Time Sensitive status and send a private sound test from Settings.</p>
           </article>
           <article class="detail-card blue">
+            <div class="feature-icon" aria-hidden="true">INR</div>
+            <h3>Home and laboratory testing reminders</h3>
+            <p>Keep independent once, weekly, or multi-week reminder schedules for home and laboratory INR testing. These are ordinary local notifications: INR Wizard does not choose a testing interval, record completion, or guarantee delivery.</p>
+          </article>
+          <article class="detail-card green">
             <div class="feature-icon" aria-hidden="true">✓</div>
             <h3>Actual Dose Ledger</h3>
             <p>Record today or an earlier date as taken as scheduled, taken in a different amount, skipped, missed, or uncertain. Planned amounts and actual records stay separate.</p>
           </article>
-          <article class="detail-card green">
+          <article class="detail-card">
             <div class="feature-icon" aria-hidden="true">+</div>
             <h3>Symptoms and safety events</h3>
             <p>Use quick selections to record symptoms or injuries noticed while taking Warfarin. Urgent selections direct the user to professional or emergency help without making a diagnosis.</p>
           </article>
-          <article class="detail-card">
+          <article class="detail-card blue">
             <div class="feature-icon" aria-hidden="true">PDF</div>
             <h3>Date-range PDF reports</h3>
             <p>Choose 7, 30, or 90 days, or a custom range. Preview a report containing patient, clinician, INR, treatment, schedule, actual dose, and symptom information before sharing it.</p>
           </article>
-          <article class="detail-card blue">
+          <article class="detail-card green">
             <div class="feature-icon" aria-hidden="true">ಅ</div>
             <h3>English and Kannada</h3>
-            <p>Select the app language in Settings. The interface, local notifications, and generated reports are designed to follow the selected language.</p>
+            <p>Select the app language in Settings. App-owned screens, local notifications, accessibility text, and new reports follow that choice. Patient-entered text remains as typed, while Apple-owned screens follow the iPhone language.</p>
           </article>
-          <article class="detail-card green">
+          <article class="detail-card">
             <div class="feature-icon" aria-hidden="true">⌁</div>
-            <h3>Backup, restore, and reset</h3>
-            <p>Create a password-encrypted full-journal backup, restore a validated backup, or use the protected reset flow when preparing the app for another patient.</p>
+            <h3>Manual and automatic backup</h3>
+            <p>Export a password-encrypted journal, or keep one optional encrypted rolling backup inside the app. Automatic backup replaces the same local file after each successful run; iOS controls the exact background time. Restore validates before replacing, and reset prepares the app for another patient.</p>
+          </article>
+          <article class="detail-card blue">
+            <div class="feature-icon" aria-hidden="true">i</div>
+            <h3>About INR Wizard &amp; Safety</h3>
+            <p>Review what the app records, what reminders can and cannot do, the measured-versus-estimated INR boundary, privacy choices, and when professional or emergency help is needed.</p>
           </article>
         </div>
       </section>
@@ -261,10 +271,10 @@
           </p>
         </div>
         <ul class="people-list">
-          <li><strong>Today at a glance</strong><span>See the latest results and the main daily actions without searching through records.</span></li>
+          <li><strong>Today at a glance</strong><span>See the latest home and laboratory INR, range labels, today’s recorded schedules, dose actions, symptom check-in, current treatments, and safety information.</span></li>
           <li><strong>History stays attributable</strong><span>Schedule revisions retain dates and sources instead of silently rewriting earlier records.</span></li>
           <li><strong>Important states use words</strong><span>Out-of-range results and safety notices are labelled in text, not shown by colour alone.</span></li>
-          <li><strong>The user stays in control</strong><span>Reports and backups leave the app only after the user chooses to share or export them.</span></li>
+          <li><strong>The user stays in control</strong><span>Reports and manually exported backups leave the app only after the user chooses a destination. The optional rolling backup remains inside protected app storage.</span></li>
         </ul>
       </section>
 
@@ -272,7 +282,7 @@
         <div class="safety-symbol" aria-hidden="true">i</div>
         <div>
           <p class="section-kicker">An important boundary</p>
-          <h2 id="safety-title">Records and reports, not medical recommendations</h2>
+          <h2 id="safety-title">Records and reports, not individual medical recommendations</h2>
           <p>
             INR Wizard does not measure INR, verify an entered result or prescription, diagnose a
             condition, determine whether a value or symptom is safe, calculate a medication dose,
@@ -292,7 +302,7 @@
         <div class="section-heading">
           <p class="section-kicker">Help when you need it</p>
           <h2 id="help-title">Quick answers for common questions</h2>
-          <p>The Help Centre explains everyday tasks in the same plain language used throughout the app.</p>
+          <p>The Help Centre explains everyday tasks in plain language, with pictures from the current iPhone interface and clearly labelled fictional sample data.</p>
         </div>
         <div class="faq-list">
           <details>
@@ -330,7 +340,7 @@
         <a href="/support/">Help</a>
         <a href="/privacy/">Privacy</a>
       </nav>
-      <p class="footer-disclaimer">INR Wizard does not provide medical advice or medication recommendations.</p>
+      <p class="footer-disclaimer">INR Wizard does not provide individual medical advice or medication recommendations.</p>
     </footer>
   </body>
 </html>
