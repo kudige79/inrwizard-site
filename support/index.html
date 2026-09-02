@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Help Centre · INR Wizard</title>
-    <meta name="description" content="Plain-language, illustrated help for INR Wizard Build 4, including INR records, testing and dose reminders, sound checks, schedules, reports, backup, restore, safety, and privacy.">
+    <meta name="description" content="Plain-language, illustrated help for INR Wizard 1.0, including INR records, Alarm and notification reminders, taken-time records, schedules, reports, backup, restore, safety, and privacy.">
     <meta name="theme-color" content="#f5f5fa" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#111116" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://www.inrwizard.com/support/">
@@ -46,7 +46,7 @@
           creating reports, and protecting the journal.
         </p>
         <div class="policy-meta" aria-label="Help details">
-          <span>INR Wizard 1.0 (Beta), Build 4</span>
+          <span>INR Wizard 1.0, Build 10</span>
           <span>Technical support</span>
           <span>No individual medical advice</span>
         </div>
@@ -246,12 +246,12 @@
             <div class="help-visual">
               <div class="faq-list help-faq-list">
                 <details open>
-                  <summary>How do I turn on a dose reminder?</summary>
-                  <p>Open Dose, select the current schedule, then Reminder. Choose Off, At dose time, or Custom time. A custom reminder must differ from the recorded dose time. Reminders occur only on days whose recorded scheduled dose is above 0 mg.</p>
+                <summary>How do I turn on a dose reminder?</summary>
+                  <p>Open Dose, select the current schedule, then Reminder. Choose Off, At dose time, or Custom time. A custom reminder must differ from the recorded dose time. Reminders occur only on days whose recorded scheduled dose is above 0 mg. On compatible iPhones, you can also choose Notification or Alarm delivery.</p>
                 </details>
                 <details>
                   <summary>How do I check notification and sound readiness?</summary>
-                  <p>Open Settings → <strong>Reminder notifications</strong>, or Dose → Reminder. The status panel shows whether Notifications, Sounds, and Time Sensitive delivery are available. Use <strong>Test reminder sound</strong> to schedule a generic, private test notification for about five seconds later. It contains no patient, medicine, dose, or INR details.</p>
+                  <p>Open Settings → <strong>Reminder delivery</strong>, or Dose → Reminder. The status panel shows Alarm permission and scheduled alarms when supported, plus Notifications, Sounds, and Time Sensitive status. Use the private test controls to check the selected route. Tests contain no patient, medicine, dose, or INR details.</p>
                 </details>
                 <details>
                   <summary>Does changing the reminder change the prescription?</summary>
@@ -259,11 +259,11 @@
                 </details>
                 <details>
                   <summary>Why did a reminder arrive without sound or not appear?</summary>
-                  <p>Confirm the current schedule has a dose above 0 mg that day and check its reminder time. In the readiness panel, use <strong>Open iPhone Settings</strong> and allow Notifications, Sounds, and Time Sensitive Notifications. Silent mode, Focus, device state, notification settings, and iOS can still silence, delay, or prevent delivery. Reopen INR Wizard after future schedule changes so it can refresh its rolling reminder window.</p>
+                  <p>Confirm the current schedule has a dose above 0 mg that day and check its reminder time and delivery choice. For Notification delivery, use <strong>Open iPhone Settings</strong> and allow Notifications, Sounds, and Time Sensitive Notifications. For Alarm delivery, allow Alarms when INR Wizard asks. Reopen INR Wizard after permission, schedule, travel, or clock changes so it can reconcile delivery. Never rely on the app as the only medication reminder.</p>
                 </details>
                 <details>
-                  <summary>Are dose reminders Critical Alerts?</summary>
-                  <p>No. Dose reminders and the built-in sound test are marked Time Sensitive when iPhone permits it. INR Wizard does not use Critical Alerts, and no reminder should be relied upon as an emergency alert or proof that a dose was taken.</p>
+                  <summary>What is the difference between Notification and Alarm delivery?</summary>
+                  <p>Notification dose reminders are marked Time Sensitive when iPhone permits it, but Focus, Silent mode, notification settings, device state, and iOS can still affect them. On iOS 26.1 or later, an authorised Alarm is designed to ring at the ringer volume even in Silent mode or a Focus and appears full screen. If Alarm permission or support is unavailable, INR Wizard uses notifications instead. Neither route is a Critical Alert, an emergency alert, or proof that a dose was taken.</p>
                 </details>
               </div>
               <figure class="help-figure">
@@ -289,8 +289,8 @@
                 <p>No. It does not choose or recommend a testing interval, record a test automatically, mark a test as completed, or justify delaying a test if a notification is absent. Follow the testing plan supplied by the appropriate healthcare professional.</p>
               </details>
               <details>
-                <summary>Are testing reminders Time Sensitive?</summary>
-                <p>No. Home and laboratory testing reminders are ordinary local notifications with generic text and the standard iPhone sound when Sounds are enabled. They are separate from Time Sensitive dose reminders and are never Critical Alerts.</p>
+                <summary>Can testing reminders use Alarm delivery?</summary>
+                <p>Yes, on a compatible iPhone with Alarm permission. Otherwise they use ordinary local notifications with generic text and INR Wizard's bundled reminder tone when Sounds are enabled. Testing notifications are not Time Sensitive, and neither route is a Critical Alert.</p>
               </details>
               <details>
                 <summary>Why should I reopen INR Wizard?</summary>
@@ -314,6 +314,10 @@
               <details>
                 <summary>What if no recorded schedule applies?</summary>
                 <p>Enter the planned amount from the checked prescription or clinician source. Record the exact time if known or mark the time as unknown.</p>
+              </details>
+              <details>
+                <summary>How do I record a dose taken later than scheduled?</summary>
+                <p>Open the scheduled dose and choose <strong>Taken</strong>. Leave <strong>Time taken known</strong> on and set <strong>Time taken</strong> to when the medication was actually taken. For example, a dose scheduled for 6:00 PM and taken at 7:00 PM keeps 6:00 PM as the scheduled time, 7:00 PM as the patient-reported taken time, and the later save or edit time as the logged time.</p>
               </details>
               <details>
                 <summary>What should I do after a missed dose?</summary>
@@ -437,7 +441,7 @@
           <section id="privacy-help" class="help-topic contact-help" aria-labelledby="contact-title">
             <p class="section-kicker">Privacy and support</p>
             <h2 id="contact-title">Your journal and technical support</h2>
-            <p>The live journal is stored in protected app storage on the iPhone. INR Wizard has no developer account, advertising, analytics, tracking, CloudKit journal synchronization, or developer-operated record server. If iCloud Backup or a computer backup is enabled, iOS may include live app data in that device backup. A PDF or manual backup leaves INR Wizard only when the user selects a destination; the optional rolling backup remains inside protected app storage and is excluded from device backup.</p>
+            <p>The live journal is stored in protected app storage on the iPhone and marked to be excluded from ordinary device backup. INR Wizard has no developer account, advertising, analytics, tracking, CloudKit journal synchronization, or developer-operated record server. A PDF or manual encrypted backup leaves INR Wizard only when the user selects a destination, which may include iCloud Drive; the optional rolling backup remains inside protected app storage and is also excluded from device backup.</p>
             <p>For technical support, email <a href="mailto:kudige@icloud.com?subject=INR%20Wizard%20Support">kudige@icloud.com</a>. This address is not monitored as an emergency medical service. Do not send patient records, backup passwords, or unnecessary health screenshots.</p>
             <div class="section-actions">
               <a class="button primary" href="mailto:kudige@icloud.com?subject=INR%20Wizard%20Support">Email technical support</a>
@@ -451,7 +455,7 @@
     <footer class="site-footer">
       <div class="footer-brand">
         <img class="footer-icon" src="/assets/app-icon.png" alt="" width="36" height="36">
-        <div><strong>INR Wizard Help Centre</strong><span>Illustrated technical help for Build 4</span></div>
+        <div><strong>INR Wizard Help Centre</strong><span>Illustrated technical help for Version 1.0</span></div>
       </div>
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>

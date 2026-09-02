@@ -5,5 +5,6 @@ Public marketing website, INR explainer, feature guide, privacy policy, and Help
 - Website: <https://www.inrwizard.com/>
 - Privacy: <https://www.inrwizard.com/privacy/>
 - Support: <https://www.inrwizard.com/support/>
+- Help alias: <https://www.inrwizard.com/help/>
 
 The site is dependency-free static HTML and CSS, published by GitHub Pages from the `main` branch.

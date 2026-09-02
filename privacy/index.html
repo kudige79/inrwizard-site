@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy · INR Wizard</title>
-    <meta name="description" content="How INR Wizard Build 4 handles patient-entered INR, treatment, reminder, dose, symptom, report, and encrypted backup data.">
+    <meta name="description" content="How INR Wizard 1.0 handles patient-entered INR, treatment, alarm and notification reminders, dose, symptom, report, and encrypted backup data.">
     <meta name="theme-color" content="#f5f5fa" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#111116" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://www.inrwizard.com/privacy/">
@@ -46,8 +46,8 @@
           advertising trackers, or analytics services inside the app.
         </p>
         <div class="policy-meta" aria-label="Policy details">
-          <span>Effective 30 August 2026</span>
-          <span>INR Wizard 1.0 (Beta), Build 4</span>
+          <span>Effective 2 September 2026</span>
+          <span>INR Wizard 1.0, Build 10</span>
         </div>
       </section>
 
@@ -55,7 +55,7 @@
         <article class="safeguard-card">
           <div class="safeguard-icon" aria-hidden="true">●</div>
           <h2>Stored on your iPhone</h2>
-          <p>Your live journal is stored inside protected app storage. It is not synchronized through CloudKit or a developer-operated record server. iOS may include app data in an iPhone device backup if you enable one.</p>
+          <p>Your live journal is stored inside protected app storage and marked to be excluded from ordinary device backup. It is not synchronized through CloudKit or a developer-operated record server.</p>
         </article>
         <article class="safeguard-card blue">
           <div class="safeguard-icon" aria-hidden="true">◒</div>
@@ -97,8 +97,8 @@
           <h2>Data collection and tracking</h2>
           <div>
             <p>The app has no user account, advertising, cross-app tracking, analytics service, or developer-operated record server. It does not use HealthKit or automatically synchronize the journal through CloudKit.</p>
-            <p>While you use a TestFlight beta, Apple automatically collects crash logs and usage information and shares them with the app provider. Feedback you submit through TestFlight, including comments, screenshots, and related tester and device details, may also be shared. Avoid including patient records or other sensitive health information in feedback or screenshots. The developer uses TestFlight information only to test, diagnose, and improve INR Wizard. Apple controls this processing under its <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight privacy notice</a>.</p>
-            <p>The app does not use CloudKit synchronization. If iCloud Backup or a computer backup is enabled for the iPhone, iOS may include the app’s live data in that device backup under Apple’s controls and your device settings. See <a href="https://support.apple.com/108922">Apple’s information about what iCloud backs up</a>.</p>
+            <p>If you install INR Wizard through TestFlight, Apple automatically collects crash logs and usage information and shares them with the app provider. Feedback submitted through TestFlight, including comments, screenshots, and related tester and device details, may also be shared. Avoid including patient records or other sensitive health information in feedback or screenshots. The developer uses TestFlight information only to test, diagnose, and improve INR Wizard. Apple controls this processing under its <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight privacy notice</a>.</p>
+            <p>The live SwiftData journal, its database sidecars, and the optional rolling backup are marked to be excluded from ordinary iPhone device backup. INR Wizard does not use CloudKit synchronization. A report or manually exported encrypted backup may still be saved to iCloud Drive or another provider when you deliberately select that destination.</p>
           </div>
         </article>
 
@@ -122,8 +122,8 @@
         <article id="notifications" class="policy-section">
           <h2>Notifications</h2>
           <div>
-            <p>Dose reminders, home and laboratory INR-testing reminders, measured-result range alerts, and the built-in reminder sound test are scheduled locally. Their generic lock-screen text does not include patient name, medicine, dose, or INR value.</p>
-            <p>Dose reminders and the sound test are marked Time Sensitive. Testing reminders and range alerts are ordinary notifications. All use the standard iPhone sound when Sounds are enabled. Focus, Silent mode, notification settings, device state, and iOS can silence, delay, or prevent delivery. INR Wizard does not use Critical Alerts.</p>
+            <p>Dose reminders, home and laboratory INR-testing reminders, measured-result range alerts, and reminder tests are scheduled locally. Notification and alarm titles are generic and do not include patient name, medicine, dose, or INR value.</p>
+            <p>Saved dose and INR-testing reminders can use notification delivery or, on a compatible iPhone with permission, Alarm delivery. Notification dose reminders and the notification sound test are Time Sensitive; testing notifications and range alerts are ordinary notifications. Notification settings, Focus, Silent mode, device state, and iOS can silence, delay, or prevent notification delivery. An authorised Alarm is designed by iOS to ring at the ringer volume even in Silent mode or a Focus and appears full screen, but permission, system limits, a hidden or locked app, travel, clock changes, or scheduling failure can still affect it. If Alarm delivery is unavailable or turned off, INR Wizard uses notifications instead. INR Wizard does not use Critical Alerts.</p>
           </div>
         </article>
 
@@ -132,7 +132,7 @@
           <div>
             <p>INR Wizard uses Apple’s complete file-protection class for its app data. Device security also depends on your iPhone passcode, Apple Account security, operating-system updates, and the destinations to which you export files.</p>
             <p>Records remain until you edit or delete them, reset the app, or remove the app from the iPhone. The rolling backup retains one latest encrypted snapshot; a recently corrected or deleted record may remain in that prior snapshot until the next successful backup replaces it. Turning automatic backup off or resetting removes the rolling file and saved password.</p>
-            <p>Exported reports and manually saved backups are separate files and must be deleted from their destinations by you. Device-backup copies are controlled through Apple’s iPhone, iCloud, or computer-backup settings.</p>
+            <p>Exported reports and manually saved backups are separate files and must be deleted from their destinations by you. A file deliberately saved to iCloud Drive or another provider is governed by that destination, even though the live journal and rolling backup are excluded from ordinary device backup.</p>
           </div>
         </article>
 
@@ -176,14 +176,14 @@
 
       <aside class="notice" aria-label="Policy scope notice">
         <span class="notice-symbol" aria-hidden="true">i</span>
-        <p>This policy describes INR Wizard 1.0 (Beta), Build 4 and will be reviewed alongside the app before public App Store release.</p>
+        <p>This policy describes INR Wizard 1.0, Build 10. It will be updated whenever the app’s data practices materially change.</p>
       </aside>
     </main>
 
     <footer class="site-footer">
       <div class="footer-brand">
         <img class="footer-icon" src="/assets/app-icon.png" alt="" width="36" height="36">
-        <div><strong>INR Wizard Privacy Policy</strong><span>How Build 4 handles patient-entered information</span></div>
+        <div><strong>INR Wizard Privacy Policy</strong><span>How Version 1.0 handles patient-entered information</span></div>
       </div>
       <nav aria-label="Footer navigation">
         <a href="/">Home</a>
