@@ -46,8 +46,8 @@
           advertising trackers, or analytics services inside the app.
         </p>
         <div class="policy-meta" aria-label="Policy details">
-          <span>Effective 2 September 2026</span>
-          <span>INR Wizard 1.0, Build 10</span>
+          <span>Effective 3 September 2026</span>
+          <span>INR Wizard 1.0, Build 11</span>
         </div>
       </section>
 
@@ -80,6 +80,7 @@
           <a href="#protection">Protection and retention</a>
           <a href="#control">Your choices</a>
           <a href="#medical">Medical safety</a>
+          <a href="#website">Website privacy</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -88,7 +89,7 @@
         <article id="information" class="policy-section">
           <h2>Information handled by the app</h2>
           <div>
-            <p>INR Wizard can store information that you enter, including a patient name, date of birth, height, weight, clinician details, INR measurements, anticoagulant information, prescribed schedules, dose records, symptom check-ins, home and laboratory testing-reminder schedules, range-alert and dose-reminder preferences, selected app language, automatic-backup preferences, and notes. BMI is calculated on the device from the height and weight entered in the profile.</p>
+            <p>INR Wizard can store information that you enter, including a patient name, date of birth, height, weight, clinician details, INR measurements, anticoagulant information, prescribed schedules, dose records, symptom check-ins, home and laboratory testing-reminder schedules, range-alert and dose-reminder preferences, selected app language, automatic-backup preferences, notes, and legacy patient-specific calibration data where present. It can also keep content-free reminder-readiness details on the iPhone, such as the latest alarm-sync time and aggregate scheduling counts. BMI is calculated on the device from the height and weight entered in the profile.</p>
             <p>This is sensitive health information. It is kept in the app’s protected local storage and is not transmitted to the developer by INR Wizard. Images on this public Help Centre use fictional demonstration data, not a live patient journal.</p>
           </div>
         </article>
@@ -115,15 +116,17 @@
           <div>
             <p><strong>Manual backup:</strong> an exported backup is encrypted using the password you provide. INR Wizard does not retain, transmit, or recover that manual-backup password. You choose the destination in Apple’s Files interface. The selected provider stores the encrypted file under its own terms; the developer does not receive it.</p>
             <p><strong>Automatic backup:</strong> this optional feature keeps one encrypted rolling file inside INR Wizard and replaces the same file after each successful run. Its password is stored only in this iPhone’s device-only Keychain so the app can run the backup. It is never sent to the developer, and the developer cannot recover it. The rolling file is marked to be excluded from device backup. iOS controls exact background timing, so the app also checks when it opens.</p>
-            <p>Turning automatic backup off, resetting all app data, or completing a full restore removes the rolling file and its saved password. Keep a separately exported encrypted backup in a trusted place if losing the iPhone or app would otherwise remove your only copy.</p>
+            <p>Automatic background backup pauses if INR Wizard has not yet verified that old reminder cleanup finished after data was replaced or erased. The app retries the cleanup and resumes automatic backup after it succeeds.</p>
+            <p>Turning automatic backup off, resetting all app data, or completing a full restore removes the rolling file and its saved password. Notification and Alarm permissions are controlled by iOS and are not restored from an INR Wizard backup. Where legacy calibration data is present, it is installation-bound and is not restored to another installation. Keep a separately exported encrypted backup in a trusted place if losing the iPhone or app would otherwise remove your only copy.</p>
           </div>
         </article>
 
         <article id="notifications" class="policy-section">
           <h2>Notifications</h2>
           <div>
-            <p>Dose reminders, home and laboratory INR-testing reminders, measured-result range alerts, and reminder tests are scheduled locally. Notification and alarm titles are generic and do not include patient name, medicine, dose, or INR value.</p>
-            <p>Saved dose and INR-testing reminders can use notification delivery or, on a compatible iPhone with permission, Alarm delivery. Notification dose reminders and the notification sound test are Time Sensitive; testing notifications and range alerts are ordinary notifications. Notification settings, Focus, Silent mode, device state, and iOS can silence, delay, or prevent notification delivery. An authorised Alarm is designed by iOS to ring at the ringer volume even in Silent mode or a Focus and appears full screen, but permission, system limits, a hidden or locked app, travel, clock changes, or scheduling failure can still affect it. If Alarm delivery is unavailable or turned off, INR Wizard uses notifications instead. INR Wizard does not use Critical Alerts.</p>
+            <p>Dose reminders, home and laboratory INR-testing reminders, measured-result range alerts, and reminder tests are scheduled locally. Notification and alarm text is generic and does not include patient name, medicine, dose, or INR value. An alarm and the name INR Wizard appear full screen on the Lock Screen and cannot be hidden by notification-preview settings. Apple’s alarm screen follows the iPhone language, which may differ from the language selected inside INR Wizard.</p>
+            <p>Saved dose and INR-testing reminders can use notification delivery or, on a compatible iPhone with permission, Alarm delivery. Notification dose reminders and the notification sound test are Time Sensitive; testing notifications and range alerts are ordinary notifications. Notification settings, Focus, Silent mode, device state, and iOS can silence, delay, or prevent notification delivery. An authorised Alarm is designed by iOS to ring at the ringer volume even in Silent mode or a Focus, but permission, system limits, a hidden or locked app, travel, clock changes, or scheduling failure can still affect it. If Alarm delivery is unavailable, not yet permitted, turned off, or too close to a one-time fire time, INR Wizard attempts notification delivery instead; actual delivery still depends on notification permission, iPhone settings, and iOS. INR Wizard does not use Critical Alerts.</p>
+            <p>The Reminder delivery screen can store and display the most recent alarm-sync time and aggregate counts. <strong>Requested</strong> is the number of reminder occurrences the app evaluated, including occurrences that could not be scheduled. <strong>Scheduled</strong> and <strong>sent as notifications</strong> mean that iOS accepted a scheduling request through that route. This diagnostic summary contains no reminder title, occurrence date, patient name, medicine, dose, or INR value and stays on the iPhone. None of the counts proves that a reminder rang, appeared, was seen, or was acted upon.</p>
           </div>
         </article>
 
@@ -141,7 +144,7 @@
           <div>
             <ul>
               <li>Review, correct, or delete records from within INR Wizard.</li>
-              <li>Review notification readiness, send a generic sound test, and open iPhone notification settings.</li>
+              <li>Review notification and alarm readiness, view aggregate alarm-sync counts, send a generic notification or alarm test, and open iPhone settings.</li>
               <li>Change dose, testing-reminder, range-alert, and automatic-backup preferences.</li>
               <li>Create a manual encrypted backup before replacing or erasing data.</li>
               <li>Use Reset All Data when preparing the app for another person.</li>
@@ -155,6 +158,14 @@
           <div>
             <p>INR Wizard is a patient-entered record and reporting tool. It does not provide individual medical or dosing advice, diagnose a condition, determine whether a result is safe, calculate or recommend a medication dose, choose a testing interval, or replace a clinician, laboratory test, prescription label, or emergency service.</p>
             <p>Do not change Warfarin or another anticoagulant based on the app. When a treatment decision depends on an INR result, follow the instructions of the appropriate healthcare professional and obtain laboratory confirmation when advised.</p>
+          </div>
+        </article>
+
+        <article id="website" class="policy-section">
+          <h2>Website and support privacy</h2>
+          <div>
+            <p>The developer has added no website analytics, advertising, tracking pixels, or marketing cookies to inrwizard.com. The site is hosted using GitHub Pages, and the domain and hosting infrastructure may process ordinary connection information such as an IP address, browser details, requested page, and access time under their own terms.</p>
+            <p>Links to Apple, MedlinePlus, the FDA, email, or another external destination leave this website and are handled by that destination. If you email support, the developer and email provider receive the sender address, message, and any attachments. Do not send patient records, backup passwords, or unnecessary health screenshots.</p>
           </div>
         </article>
 
@@ -176,7 +187,7 @@
 
       <aside class="notice" aria-label="Policy scope notice">
         <span class="notice-symbol" aria-hidden="true">i</span>
-        <p>This policy describes INR Wizard 1.0, Build 10. It will be updated whenever the app’s data practices materially change.</p>
+        <p>This policy describes INR Wizard 1.0, Build 11. It will be updated whenever the app’s data practices materially change.</p>
       </aside>
     </main>
 

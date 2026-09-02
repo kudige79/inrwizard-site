@@ -47,7 +47,7 @@
             clinician-provided schedules, actual dose records, and symptoms together.
           </p>
           <div class="policy-meta" aria-label="App details">
-            <span>Version 1.0, Build 10</span>
+            <span>Version 1.0, Build 11</span>
             <span>Patient-entered records</span>
             <span>English and Kannada</span>
           </div>
@@ -77,6 +77,11 @@
         <div><strong>Made to share</strong><span>Clear date-range PDF reports</span></div>
       </section>
 
+      <aside class="notice" aria-label="Release and device availability">
+        <span class="notice-symbol" aria-hidden="true">i</span>
+        <p><strong>Release status:</strong> Version 1.0 is planned for the India App Store and is currently in private TestFlight testing. INR Wizard supports iOS 17 or later. Alarm delivery requires iOS 26.1 or later; on older supported versions, reminder schedules attempt notification delivery, which still depends on notification permission, iPhone settings, and iOS. The internal beta includes English and Kannada, with Kannada clinical wording still undergoing its planned native-language and anticoagulation-clinician review before public release.</p>
+      </aside>
+
       <section id="what-is-inr" class="section split-section inr-section" aria-labelledby="inr-title">
         <div class="section-intro">
           <p class="section-kicker">INR, in plain language</p>
@@ -86,6 +91,8 @@
             prothrombin time, or PT, test measures how many seconds it takes a clot to form in a
             blood sample. The International Normalised Ratio turns that PT result into a
             standardised number, making results easier to compare across test methods.
+            A higher INR usually means that the blood took longer to clot, but only the person’s
+            healthcare team can interpret an individual result.
           </p>
           <p>
             INR testing is commonly used to help a healthcare professional monitor Warfarin,
@@ -153,7 +160,7 @@
       <section id="features" class="section features-section" aria-labelledby="features-title">
         <div class="section-heading">
           <p class="section-kicker">A detailed patient journal</p>
-          <h2 id="features-title">Everything needed to keep an organised record</h2>
+          <h2 id="features-title">Tools for keeping an organised record</h2>
           <p>Each feature is designed to record information faithfully without turning the app into a treatment or dosing tool.</p>
         </div>
 
@@ -191,12 +198,12 @@
           <article class="detail-card">
             <div class="feature-icon" aria-hidden="true">⏱</div>
             <h3>Notification or Alarm delivery</h3>
-            <p>Choose notification delivery or, on a compatible iPhone with permission, Alarm delivery for a saved dose or INR-testing reminder. Notification dose reminders are Time Sensitive when permitted, not Critical Alerts. If Alarm delivery is unavailable or turned off, INR Wizard uses notifications instead. Neither route records that a dose was taken.</p>
+            <p>Choose notification delivery or, on a compatible iPhone with permission, Alarm delivery for a saved dose or INR-testing reminder. Notification dose reminders are Time Sensitive when permitted, not Critical Alerts. If alarm permission is not granted, the app explains the fallback and attempts notification delivery instead; delivery still depends on notification permission, iPhone settings, and iOS. Neither route records that a dose was taken.</p>
           </article>
           <article class="detail-card blue">
             <div class="feature-icon" aria-hidden="true">INR</div>
             <h3>Home and laboratory testing reminders</h3>
-            <p>Keep independent once, weekly, or multi-week reminder schedules for home and laboratory INR testing. These are ordinary local notifications: INR Wizard does not choose a testing interval, record completion, or guarantee delivery.</p>
+            <p>Keep independent once, weekly, or multi-week reminder schedules for home and laboratory INR testing. Choose Notification or compatible Alarm delivery; INR Wizard does not choose a testing interval, record completion, or guarantee delivery.</p>
           </article>
           <article class="detail-card green">
             <div class="feature-icon" aria-hidden="true">✓</div>
@@ -221,11 +228,11 @@
           <article class="detail-card">
             <div class="feature-icon" aria-hidden="true">⌁</div>
             <h3>Manual and automatic backup</h3>
-            <p>Export a password-encrypted journal, or keep one optional encrypted rolling backup inside the app. Automatic backup replaces the same local file after each successful run; iOS controls the exact background time. Restore validates before replacing, and reset prepares the app for another patient.</p>
+            <p>Export a password-encrypted journal, or keep one optional encrypted rolling backup inside the app. The live journal and rolling backup are excluded from ordinary device backup. Automatic backup replaces the same local file after each successful run; iOS controls the exact background time. Restore validates before replacing, and reset prepares the app for another patient.</p>
           </article>
           <article class="detail-card blue">
             <div class="feature-icon" aria-hidden="true">i</div>
-            <h3>About INR Wizard &amp; Safety</h3>
+            <h3>About INR Wizard &amp; Your Data</h3>
             <p>Review what the app records, what reminders can and cannot do, the measured-versus-estimated INR boundary, privacy choices, and when professional or emergency help is needed.</p>
           </article>
         </div>
