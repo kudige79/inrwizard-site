@@ -42,12 +42,12 @@
         <h1 id="page-title">Your health journal stays under your control.</h1>
         <p class="hero-copy">
           INR Wizard stores the live journal in protected app storage on your iPhone and does not
-          synchronize it to a developer-operated server. There are no developer accounts,
+          synchronise it to a developer-operated server. There are no developer accounts,
           advertising trackers, or analytics services inside the app.
         </p>
         <div class="policy-meta" aria-label="Policy details">
-          <span>Effective 3 September 2026</span>
-          <span>INR Wizard 1.0, Build 11</span>
+          <span>Effective 5 September 2026</span>
+          <span>INR Wizard 1.0</span>
         </div>
       </section>
 
@@ -55,7 +55,7 @@
         <article class="safeguard-card">
           <div class="safeguard-icon" aria-hidden="true">●</div>
           <h2>Stored on your iPhone</h2>
-          <p>Your live journal is stored inside protected app storage and marked to be excluded from ordinary device backup. It is not synchronized through CloudKit or a developer-operated record server.</p>
+          <p>Your live journal is stored inside protected app storage and marked to be excluded from ordinary device backup. It is not synchronised through CloudKit or a developer-operated record server.</p>
         </article>
         <article class="safeguard-card blue">
           <div class="safeguard-icon" aria-hidden="true">◒</div>
@@ -72,12 +72,14 @@
       <nav class="contents" aria-label="Privacy policy sections">
         <p>On this page</p>
         <div>
+          <a href="#responsible">Who is responsible</a>
           <a href="#information">Information handled</a>
           <a href="#collection">Collection and tracking</a>
           <a href="#reports">Reports and sharing</a>
           <a href="#backup">Backup and restore</a>
           <a href="#notifications">Notifications</a>
           <a href="#protection">Protection and retention</a>
+          <a href="#deletion">Deletion and consent</a>
           <a href="#control">Your choices</a>
           <a href="#medical">Medical safety</a>
           <a href="#website">Website privacy</a>
@@ -86,10 +88,18 @@
       </nav>
 
       <section class="policy-card" aria-label="Full privacy policy">
+        <article id="responsible" class="policy-section">
+          <h2>Who is responsible</h2>
+          <div>
+            <p>INR Wizard is published by Panduranga Shenoy Kudige, an individual developer, who is responsible for the app and for this policy. Contact: <a href="mailto:kudige@icloud.com?subject=INR%20Wizard%20Privacy">kudige@icloud.com</a>.</p>
+            <p>India’s Digital Personal Data Protection Act, 2023 (DPDP Act): the journal you enter in INR Wizard stays on your iPhone and is never sent to the developer, so the developer does not hold, process, or share it. Beyond that, the developer can receive only: what you choose to include in an email to the address above; crash reports and aggregated usage statistics that Apple shares with app developers when the iPhone setting <strong>Share with App Developers</strong> (Settings → Privacy &amp; Security → Analytics &amp; Improvements) is on, which Apple controls and which are not drawn from your journal; and, for invited testers only, the TestFlight information described under Data collection and tracking. You can ask for support correspondence to be deleted at any time; requests are answered from the same address.</p>
+          </div>
+        </article>
+
         <article id="information" class="policy-section">
           <h2>Information handled by the app</h2>
           <div>
-            <p>INR Wizard can store information that you enter, including a patient name, date of birth, height, weight, clinician details, INR measurements, anticoagulant information, prescribed schedules, dose records, symptom check-ins, home and laboratory testing-reminder schedules, range-alert and dose-reminder preferences, selected app language, automatic-backup preferences, notes, and legacy patient-specific calibration data where present. It can also keep content-free reminder-readiness details on the iPhone, such as the latest alarm-sync time and aggregate scheduling counts. BMI is calculated on the device from the height and weight entered in the profile.</p>
+            <p>INR Wizard can store information that you enter, including a patient name, date of birth, height, weight, clinician details, INR measurements, anticoagulant information, prescribed schedules, dose records, symptom check-ins, home and laboratory testing-reminder schedules, range-alert and dose-reminder preferences, automatic-backup preferences, notes, and other installation-specific settings. It can also keep content-free reminder-readiness details on the iPhone, such as the latest alarm-sync time and aggregate scheduling counts. BMI is calculated on the device from the height and weight entered in the profile.</p>
             <p>This is sensitive health information. It is kept in the app’s protected local storage and is not transmitted to the developer by INR Wizard. Images on this public Help Centre use fictional demonstration data, not a live patient journal.</p>
           </div>
         </article>
@@ -97,9 +107,9 @@
         <article id="collection" class="policy-section">
           <h2>Data collection and tracking</h2>
           <div>
-            <p>The app has no user account, advertising, cross-app tracking, analytics service, or developer-operated record server. It does not use HealthKit or automatically synchronize the journal through CloudKit.</p>
-            <p>If you install INR Wizard through TestFlight, Apple automatically collects crash logs and usage information and shares them with the app provider. Feedback submitted through TestFlight, including comments, screenshots, and related tester and device details, may also be shared. Avoid including patient records or other sensitive health information in feedback or screenshots. The developer uses TestFlight information only to test, diagnose, and improve INR Wizard. Apple controls this processing under its <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight privacy notice</a>.</p>
-            <p>The live SwiftData journal, its database sidecars, and the optional rolling backup are marked to be excluded from ordinary iPhone device backup. INR Wizard does not use CloudKit synchronization. A report or manually exported encrypted backup may still be saved to iCloud Drive or another provider when you deliberately select that destination.</p>
+            <p>The app has no user account, advertising, cross-app tracking, analytics service, or developer-operated record server. It does not use HealthKit or automatically synchronise the journal through CloudKit.</p>
+            <p>If you install INR Wizard through TestFlight as an invited tester rather than from the App Store, Apple automatically collects crash logs and usage information and shares them with the app provider. Feedback submitted through TestFlight, including comments, screenshots, and related tester and device details, may also be shared. Avoid including patient records or other sensitive health information in feedback or screenshots. The developer uses TestFlight information only to test, diagnose, and improve INR Wizard. Apple controls this processing under its <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight privacy notice</a>.</p>
+            <p>The live SwiftData journal, its database sidecars, and the optional rolling backup are marked to be excluded from ordinary iPhone device backup. INR Wizard does not use CloudKit synchronisation. A report or manually exported encrypted backup may still be saved to iCloud Drive or another provider when you deliberately select that destination.</p>
           </div>
         </article>
 
@@ -117,14 +127,14 @@
             <p><strong>Manual backup:</strong> an exported backup is encrypted using the password you provide. INR Wizard does not retain, transmit, or recover that manual-backup password. You choose the destination in Apple’s Files interface. The selected provider stores the encrypted file under its own terms; the developer does not receive it.</p>
             <p><strong>Automatic backup:</strong> this optional feature keeps one encrypted rolling file inside INR Wizard and replaces the same file after each successful run. Its password is stored only in this iPhone’s device-only Keychain so the app can run the backup. It is never sent to the developer, and the developer cannot recover it. The rolling file is marked to be excluded from device backup. iOS controls exact background timing, so the app also checks when it opens.</p>
             <p>Automatic background backup pauses if INR Wizard has not yet verified that old reminder cleanup finished after data was replaced or erased. The app retries the cleanup and resumes automatic backup after it succeeds.</p>
-            <p>Turning automatic backup off, resetting all app data, or completing a full restore removes the rolling file and its saved password. Notification and Alarm permissions are controlled by iOS and are not restored from an INR Wizard backup. Where legacy calibration data is present, it is installation-bound and is not restored to another installation. Keep a separately exported encrypted backup in a trusted place if losing the iPhone or app would otherwise remove your only copy.</p>
+            <p>Turning automatic backup off, resetting all app data, or completing a full restore removes the rolling file and its saved password. Notification and Alarm permissions are controlled by iOS and are not restored from an INR Wizard backup. Keep a separately exported encrypted backup in a trusted place if losing the iPhone or app would otherwise remove your only copy.</p>
           </div>
         </article>
 
         <article id="notifications" class="policy-section">
           <h2>Notifications</h2>
           <div>
-            <p>Dose reminders, home and laboratory INR-testing reminders, measured-result range alerts, and reminder tests are scheduled locally. Notification and alarm text is generic and does not include patient name, medicine, dose, or INR value. An alarm and the name INR Wizard appear full screen on the Lock Screen and cannot be hidden by notification-preview settings. Apple’s alarm screen follows the iPhone language, which may differ from the language selected inside INR Wizard.</p>
+            <p>Dose reminders, home and laboratory INR-testing reminders, measured-result range alerts, and reminder tests are scheduled locally. Notification and alarm text is generic and does not include patient name, medicine, dose, or INR value. An alarm and the name INR Wizard appear full screen on the Lock Screen and cannot be hidden by notification-preview settings. Apple’s alarm screen follows the iPhone language.</p>
             <p>Saved dose and INR-testing reminders can use notification delivery or, on a compatible iPhone with permission, Alarm delivery. Notification dose reminders and the notification sound test are Time Sensitive; testing notifications and range alerts are ordinary notifications. Notification settings, Focus, Silent mode, device state, and iOS can silence, delay, or prevent notification delivery. An authorised Alarm is designed by iOS to ring at the ringer volume even in Silent mode or a Focus, but permission, system limits, a hidden or locked app, travel, clock changes, or scheduling failure can still affect it. If Alarm delivery is unavailable, not yet permitted, turned off, or too close to a one-time fire time, INR Wizard attempts notification delivery instead; actual delivery still depends on notification permission, iPhone settings, and iOS. INR Wizard does not use Critical Alerts.</p>
             <p>The Reminder delivery screen can store and display the most recent alarm-sync time and aggregate counts. <strong>Requested</strong> is the number of reminder occurrences the app evaluated, including occurrences that could not be scheduled. <strong>Scheduled</strong> and <strong>sent as notifications</strong> mean that iOS accepted a scheduling request through that route. This diagnostic summary contains no reminder title, occurrence date, patient name, medicine, dose, or INR value and stays on the iPhone. None of the counts proves that a reminder rang, appeared, was seen, or was acted upon.</p>
           </div>
@@ -139,15 +149,25 @@
           </div>
         </article>
 
+        <article id="deletion" class="policy-section">
+          <h2>Deleting your data and withdrawing consent</h2>
+          <div>
+            <p><strong>Delete everything on the iPhone:</strong> in INR Wizard open Settings and choose <strong>Erase all app data</strong>. This removes the live journal, generated reports, the rolling backup, and its saved backup password, then returns to setup. Deleting the INR Wizard app from the iPhone also removes the live journal, generated reports, and the rolling backup; use Erase all app data first if you also want the saved backup password removed.</p>
+            <p><strong>Delete individual records:</strong> INR results, dose records, symptom check-ins, testing reminders, and physicians can be edited or deleted from within the app; a physician recorded as the source of the saved INR range can be deleted once the range names another source. A dose schedule can be deleted while unused and otherwise stopped, which keeps its history. A treatment is ended with an end date rather than deleted. The patient profile is removed only by Erase all app data.</p>
+            <p><strong>Files outside the app:</strong> reports and manual backups you exported are separate files. Delete them from the place you saved, printed, or sent them; INR Wizard cannot reach them.</p>
+            <p><strong>Withdraw consent:</strong> the developer holds none of your journal, so there is nothing held by the developer to delete or to stop processing. To withdraw consent for the app’s own handling of your information, stop using INR Wizard and erase or delete it as above. Notification and Alarm permissions can be withdrawn at any time in iPhone Settings, and Apple’s crash and usage sharing is switched off under Analytics &amp; Improvements. If you have emailed support, you may ask for that correspondence to be deleted, subject to technical, legal, or provider-backup limits.</p>
+          </div>
+        </article>
+
         <article id="control" class="policy-section">
           <h2>Your choices</h2>
           <div>
             <ul>
               <li>Review, correct, or delete records from within INR Wizard.</li>
               <li>Review notification and alarm readiness, view aggregate alarm-sync counts, send a generic notification or alarm test, and open iPhone settings.</li>
-              <li>Change dose, testing-reminder, range-alert, and automatic-backup preferences.</li>
+              <li>Change dose-reminder, testing-reminder, range-alert, and automatic-backup preferences.</li>
               <li>Create a manual encrypted backup before replacing or erasing data.</li>
-              <li>Use Reset All Data when preparing the app for another person.</li>
+              <li>Use Erase all app data when preparing the app for another person.</li>
               <li>Delete exported reports and backups from the places you saved them.</li>
             </ul>
           </div>
@@ -180,14 +200,14 @@
           <h2>Contact</h2>
           <div>
             <p>Questions about this policy or INR Wizard’s privacy practices can be sent to the address below. Emailing support gives the developer your sender address, message, and any attachments, and the email provider handles those items under its terms. They may be retained as reasonably needed to answer or investigate the request. Do not send patient records, backup passwords, or unnecessary health screenshots. You may ask for support correspondence to be deleted, subject to technical, legal, or provider-backup limits.</p>
-            <p><strong>Kudige Panduranga Shenoy</strong><br><a href="mailto:kudige@icloud.com?subject=INR%20Wizard%20Privacy">kudige@icloud.com</a></p>
+            <p><strong>Panduranga Shenoy Kudige</strong><br><a href="mailto:kudige@icloud.com?subject=INR%20Wizard%20Privacy">kudige@icloud.com</a></p>
           </div>
         </article>
       </section>
 
       <aside class="notice" aria-label="Policy scope notice">
         <span class="notice-symbol" aria-hidden="true">i</span>
-        <p>This policy describes INR Wizard 1.0, Build 11. It will be updated whenever the app’s data practices materially change.</p>
+        <p>This policy describes INR Wizard 1.0. It will be updated whenever the app’s data practices materially change.</p>
       </aside>
     </main>
 
