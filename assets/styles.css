@@ -688,6 +688,49 @@ footer p {
   bottom: 54px;
 }
 
+.store-placeholder {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 3px 14px;
+  max-width: 600px;
+  margin-top: 26px;
+  padding: 17px 19px;
+  border: 1px solid rgba(81, 71, 229, 0.26);
+  border-radius: 20px;
+  background: linear-gradient(125deg, var(--accent-soft), rgba(228, 241, 255, 0.78));
+  box-shadow: 0 14px 36px rgba(45, 38, 124, 0.1);
+}
+
+.store-label {
+  grid-row: 1 / 3;
+  display: grid;
+  min-width: 78px;
+  min-height: 52px;
+  place-items: center;
+  padding: 8px;
+  border-radius: 14px;
+  background: var(--text);
+  color: var(--background);
+  font-size: 13px;
+  font-weight: 760;
+  letter-spacing: 0.03em;
+}
+
+.store-placeholder strong {
+  align-self: end;
+  font-size: 25px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.store-details {
+  align-self: start;
+  color: var(--secondary);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 .trust-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -764,6 +807,56 @@ footer p {
 .centred-heading > p:last-child {
   margin: 22px 0 0;
   font-size: 20px;
+}
+
+.screenshot-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.screenshot-gallery figure {
+  min-width: 0;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid var(--separator);
+  border-radius: 27px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.screenshot-gallery a {
+  display: block;
+  overflow: hidden;
+  border-radius: 19px;
+  line-height: 0;
+}
+
+.screenshot-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--separator);
+  border-radius: 19px;
+  background: #f4f4f8;
+}
+
+.screenshot-gallery figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 13px 5px 5px;
+  line-height: 1.35;
+}
+
+.screenshot-gallery figcaption strong {
+  font-size: 16px;
+}
+
+.screenshot-gallery figcaption span {
+  color: var(--secondary);
+  font-size: 13px;
 }
 
 .centred-heading {
@@ -1038,6 +1131,35 @@ footer p {
   margin-left: auto;
 }
 
+.release-section {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  align-items: center;
+  gap: 34px;
+  padding: 52px 56px;
+  border: 1px solid rgba(81, 71, 229, 0.22);
+  border-radius: 36px;
+  background: linear-gradient(135deg, rgba(233, 231, 255, 0.86), rgba(228, 241, 255, 0.7));
+  box-shadow: var(--shadow);
+}
+
+.release-section > img {
+  width: 112px;
+  height: 112px;
+  border-radius: 24px;
+  box-shadow: 0 16px 38px rgba(50, 39, 143, 0.2);
+}
+
+.release-section h2 {
+  font-size: clamp(40px, 5vw, 58px);
+}
+
+.release-section p:not(.section-kicker) {
+  max-width: 760px;
+  margin: 14px 0 0;
+  color: var(--secondary);
+}
+
 .faq-list {
   overflow: hidden;
   border: 1px solid var(--separator);
@@ -1182,7 +1304,7 @@ footer p {
   .marketing-hero {
     display: flex;
     min-height: 0;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     gap: 36px;
   }
@@ -1218,6 +1340,20 @@ footer p {
 
   .split-section {
     grid-template-columns: 1fr;
+  }
+
+  .screenshot-gallery {
+    grid-template-columns: repeat(5, minmax(190px, 230px));
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    padding: 4px max(24px, calc((100vw - 720px) / 2)) 20px;
+    overflow-x: auto;
+    scroll-padding-inline: 24px;
+    scroll-snap-type: x proximity;
+  }
+
+  .screenshot-gallery figure {
+    scroll-snap-align: start;
   }
 
   .purpose-section,
@@ -1287,6 +1423,21 @@ footer p {
   .hero-actions .button,
   .section-actions .button {
     width: 100%;
+  }
+
+  .store-placeholder {
+    width: 100%;
+  }
+
+  .release-section {
+    grid-template-columns: 1fr;
+    padding: 38px 24px;
+  }
+
+  .release-section > img {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
   }
 
   .section {
@@ -1365,6 +1516,11 @@ footer p {
   .safety-section {
     background: #282342;
   }
+
+  .store-placeholder,
+  .release-section {
+    background: linear-gradient(135deg, rgba(67, 60, 108, 0.58), rgba(28, 56, 78, 0.5));
+  }
 }
 
 @media (forced-colors: active) {
@@ -1374,7 +1530,10 @@ footer p {
   .faq-list,
   .people-section,
   .inr-explainer,
-  .trust-strip {
+  .trust-strip,
+  .store-placeholder,
+  .screenshot-gallery figure,
+  .release-section {
     border: 1px solid CanvasText;
   }
 
