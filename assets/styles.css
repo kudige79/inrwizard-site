@@ -735,6 +735,21 @@ footer p {
   line-height: 1.4;
 }
 
+.store-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.store-link:hover {
+  border-color: var(--accent);
+}
+
+.store-link:hover strong {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 .trust-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
