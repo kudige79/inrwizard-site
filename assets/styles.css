@@ -608,6 +608,10 @@ footer p {
   padding-top: 56px;
 }
 
+.marketing-shell > .notice {
+  margin-bottom: clamp(44px, 6vw, 72px);
+}
+
 .marketing-hero {
   grid-template-columns: minmax(0, 1fr) minmax(300px, 390px);
   gap: clamp(48px, 8vw, 96px);
