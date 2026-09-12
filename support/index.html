@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#f5f5fa" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#111116" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://www.inrwizard.com/support/">
-    <link rel="icon" href="/assets/app-icon.png" type="image/png">
+    <link rel="icon" href="/assets/app-icon-144.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/app-icon.png">
-    <link rel="stylesheet" href="/assets/styles.css?v=5">
+    <link rel="stylesheet" href="/assets/styles.css?v=6">
     <meta property="og:type" content="website">
     <meta property="og:title" content="INR Wizard Help Centre">
     <meta property="og:description" content="Illustrated, step-by-step help for recording INR, schedules, doses, symptoms, reports, reminders, sound checks, and backups.">
@@ -28,7 +28,7 @@
     <a class="skip-link" href="#content">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="/" aria-label="INR Wizard home">
-        <img src="/assets/app-icon.png" alt="" width="48" height="48">
+        <img src="/assets/app-icon-144.png" alt="" width="48" height="48">
         <span>INR Wizard</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
@@ -66,7 +66,8 @@
           <a href="#daily-record"><span aria-hidden="true">✓</span><strong>Doses and symptoms</strong><small>Keep the actual daily record</small></a>
           <a href="#reports"><span aria-hidden="true">PDF</span><strong>Reports and sharing</strong><small>Create and preview a date-range report</small></a>
           <a href="#backup"><span aria-hidden="true">⌁</span><strong>Backup and restore</strong><small>Protect or replace the journal</small></a>
-          <a href="#reminders"><span aria-hidden="true">⏱</span><strong>Reminders and sound</strong><small>Dose, home-test, and laboratory-test reminders</small></a>
+          <a href="#reminders"><span aria-hidden="true">⏱</span><strong>Dose reminders and sound</strong><small>Timing, delivery route, and sound checks</small></a>
+          <a href="#testing-reminders"><span aria-hidden="true">INR</span><strong>INR-testing reminders</strong><small>Home and laboratory testing schedules</small></a>
         </div>
       </section>
 
@@ -172,7 +173,7 @@
               <figure class="help-figure">
                 <span class="sample-chip">Fictional sample data</span>
                 <a href="/assets/help/today-build13.png" aria-label="Open the Today screenshot at full size">
-                  <img src="/assets/help/today-build13.png" width="1320" height="2868" loading="lazy" decoding="async" alt="Today screen showing the latest home and laboratory INR readings, a 30-day measured-INR chart, and the currently saved clinician range.">
+                  <img src="/assets/help/today-build13-480.png" srcset="/assets/help/today-build13-480.png 480w, /assets/help/today-build13-720.png 720w, /assets/help/today-build13-990.png 990w, /assets/help/today-build13.png 1320w" sizes="(max-width: 394px) calc(100vw - 44px), (max-width: 600px) 350px, (max-width: 760px) 342px, (max-width: 980px) 272px, 302px" width="1320" height="2868" loading="lazy" decoding="async" alt="Today screen showing the latest home and laboratory INR readings, a 30-day measured-INR chart, and the currently saved clinician range.">
                 </a>
                 <figcaption>Today brings the latest measured results and 30-day record together. All values shown are fictional sample data.</figcaption>
               </figure>
@@ -212,7 +213,7 @@
               <figure class="help-figure">
                 <span class="sample-chip">Fictional sample data</span>
                 <a href="/assets/help/records-build13.png" aria-label="Open the linked INR comparison screenshot at full size">
-                  <img src="/assets/help/records-build13.png" width="1320" height="2868" loading="lazy" decoding="async" alt="Records screen showing linked home and laboratory readings, their collection gap, signed difference, and comparison count.">
+                  <img src="/assets/help/records-build13-480.png" srcset="/assets/help/records-build13-480.png 480w, /assets/help/records-build13-720.png 720w, /assets/help/records-build13-990.png 990w, /assets/help/records-build13.png 1320w" sizes="(max-width: 394px) calc(100vw - 44px), (max-width: 600px) 350px, (max-width: 760px) 342px, (max-width: 980px) 272px, 282px" width="1320" height="2868" loading="lazy" decoding="async" alt="Records screen showing linked home and laboratory readings, their collection gap, signed difference, and comparison count.">
                 </a>
                 <figcaption>Linked entries show home minus laboratory. Fictional sample values; this is not a correction or treatment recommendation.</figcaption>
               </figure>
@@ -237,12 +238,12 @@
                 <p>INR Wizard adds the seven patient-entered daily amounts for that dose time and shows the total. This is simple arithmetic on the recorded schedule, not a calculated or recommended dose.</p>
               </details>
               <details>
-                <summary>What does “Add separate dose time” mean?</summary>
+                <summary>What does “Add another dose time…” mean?</summary>
                 <p>Use it only if the clinician prescribed another administration time during the day. It creates a separate clinical schedule. It is not a way to add a second notification for the same dose.</p>
               </details>
               <details>
                 <summary>How are schedule changes preserved?</summary>
-                <p><strong>Edit dose schedule</strong> normally creates a new version from the selected effective date while retaining the earlier version and linked dose records in Schedule History. Once a dose record refers to a schedule version, the original clinical details are protected from being silently overwritten.</p>
+                <p><strong>Change schedule…</strong> normally creates a new version from the selected effective date while retaining the earlier version and linked dose records in Schedule History. Once a dose record refers to a schedule version, the original clinical details are protected from being silently overwritten.</p>
               </details>
               <details>
                 <summary>Can I correct, stop, or delete a schedule?</summary>
@@ -252,7 +253,7 @@
               <figure class="help-figure">
                 <span class="sample-chip">Fictional sample data</span>
                 <a href="/assets/help/dose-ledger-build13.png" aria-label="Open the Dose Ledger screenshot at full size">
-                  <img src="/assets/help/dose-ledger-build13.png" width="1320" height="2868" loading="lazy" decoding="async" alt="Dose Ledger showing today’s recorded Warfarin plan, an unrecorded evening dose, and a collapsible current schedule.">
+                  <img src="/assets/help/dose-ledger-build13-480.png" srcset="/assets/help/dose-ledger-build13-480.png 480w, /assets/help/dose-ledger-build13-720.png 720w, /assets/help/dose-ledger-build13-990.png 990w, /assets/help/dose-ledger-build13.png 1320w" sizes="(max-width: 394px) calc(100vw - 44px), (max-width: 600px) 350px, (max-width: 760px) 342px, (max-width: 980px) 272px, 302px" width="1320" height="2868" loading="lazy" decoding="async" alt="Dose Ledger showing today’s recorded Warfarin plan, an unrecorded evening dose, and a collapsible current schedule.">
                 </a>
                 <figcaption>Use Dose to review a patient-entered schedule or reminder. Medicine and amounts are fictional examples, not medical advice.</figcaption>
               </figure>
@@ -266,11 +267,11 @@
               <div class="faq-list help-faq-list">
                 <details open>
                 <summary>How do I turn on a dose reminder?</summary>
-                  <p>Open Dose, select the current schedule, then Reminder. Choose Off, At dose time, or Custom time. A custom reminder must differ from the recorded dose time. INR Wizard prepares reminder occurrences only for days whose recorded scheduled dose is above 0 mg. On compatible iPhones, you can also choose Notification or Alarm delivery.</p>
+                  <p>Open Dose, select the current schedule, then Reminder. <strong>Remind me</strong> is a separate toggle. Turn it on, then choose <strong>At dose time</strong> or <strong>Custom time</strong> in the timing picker. A custom reminder must differ from the recorded dose time. INR Wizard prepares reminder occurrences only for days whose recorded scheduled dose is above 0 mg. On compatible iPhones, you can also choose Notification or Alarm delivery.</p>
                 </details>
                 <details>
                   <summary>How do I check notification and sound readiness?</summary>
-                  <p>Open Settings → <strong>Reminder delivery</strong>, or Dose → Reminder. The status panel shows Alarm permission and scheduled alarms when supported, plus Notifications, Sounds, and Time Sensitive status. Use the generic, privacy-safe test controls to check the selected route. Tests contain no patient, medicine, dose, or INR details.</p>
+                  <p>Open Settings → <strong>Reminder notifications</strong>, or Dose → Reminder. The status panel shows Alarm permission and scheduled alarms when supported, plus Notifications, Sounds, and Time Sensitive status. Use the generic, privacy-safe test controls to check the selected route. Tests contain no patient, medicine, dose, or INR details.</p>
                 </details>
                 <details>
                   <summary>Why does “Alarm permission needed” appear?</summary>
@@ -294,15 +295,15 @@
                 </details>
                 <details>
                   <summary>What is the difference between Notification and Alarm delivery?</summary>
-                  <p>Notification dose reminders are marked Time Sensitive when iPhone permits it, but Focus, Silent mode, notification settings, device state, and iOS can still affect them. On iOS 26.1 or later, an authorised Alarm is designed to ring at the ringer volume even in Silent mode or a Focus and appears full screen. The alarm and the name INR Wizard are visible on the Lock Screen, and Apple’s alarm screen follows the iPhone language. iOS may also present the alarm on a paired Apple Watch; INR Wizard itself remains an iPhone app. If Alarm permission or support is unavailable, INR Wizard attempts notification delivery instead; delivery still depends on notification permission, iPhone settings, and iOS. Neither route is a Critical Alert, an emergency alert, or proof that a dose was taken.</p>
+                  <p>Notification dose reminders are marked Time Sensitive when iPhone permits it, but Focus, Silent mode, notification settings, device state, and iOS can still affect them. On iOS 26.1 or later, <a href="https://developer.apple.com/documentation/AlarmKit/scheduling-an-alarm-with-alarmkit">Apple documents that an authorised AlarmKit alarm can override Silent mode and Focus when it fires</a>. It appears full screen; the alarm and the name INR Wizard are visible on the Lock Screen, and Apple’s alarm screen follows the iPhone language. iOS may also present the alarm on a paired Apple Watch; INR Wizard itself remains an iPhone app. If Alarm permission or support is unavailable, INR Wizard attempts notification delivery instead; delivery still depends on notification permission, iPhone settings, and iOS. Neither route is a Critical Alert, an emergency alert, or proof that a dose was taken.</p>
                 </details>
               </div>
               <figure class="help-figure">
                 <span class="sample-chip">Fictional sample data</span>
                 <a href="/assets/help/dose-reminder-build13.png" aria-label="Open the Dose Reminder screenshot at full size">
-                  <img src="/assets/help/dose-reminder-build13.png" width="1320" height="2868" loading="lazy" decoding="async" alt="Dose Reminder screen showing the recorded dose time, reminder timing, delivery choice, notification status, and sound test.">
+                  <img src="/assets/help/dose-reminder-build13-480.png" srcset="/assets/help/dose-reminder-build13-480.png 480w, /assets/help/dose-reminder-build13-720.png 720w, /assets/help/dose-reminder-build13-990.png 990w, /assets/help/dose-reminder-build13.png 1320w" sizes="(max-width: 394px) calc(100vw - 44px), (max-width: 600px) 350px, (max-width: 760px) 342px, (max-width: 980px) 272px, 302px" width="1320" height="2868" loading="lazy" decoding="async" alt="Dose Reminder screen showing the recorded dose time, reminder timing, delivery choice, notification status, and sound test.">
                 </a>
-                <figcaption>This example shows Notification selected and separates the recorded dose time from reminder delivery. Alarm permission and sync details appear in the Alarms section when Alarm is selected on a compatible iPhone. Fictional schedule details.</figcaption>
+                <figcaption>This example shows Notification selected and separates the recorded dose time from reminder timing. Alarm permission and sync details appear in the Alarms section when Alarm is selected on a compatible iPhone. Fictional schedule details.</figcaption>
               </figure>
             </div>
           </section>
@@ -371,7 +372,7 @@
               <figure class="help-figure">
                 <span class="sample-chip">Fictional sample data</span>
                 <a href="/assets/help/symptom-check-in-build13.png" aria-label="Open the Symptom Check-in screenshot at full size">
-                  <img src="/assets/help/symptom-check-in-build13.png" width="1320" height="2868" loading="lazy" decoding="async" alt="Symptom Check-in screen showing fictional patient-observed Warfarin symptoms and injuries with safety guidance.">
+                  <img src="/assets/help/symptom-check-in-build13-480.png" srcset="/assets/help/symptom-check-in-build13-480.png 480w, /assets/help/symptom-check-in-build13-720.png 720w, /assets/help/symptom-check-in-build13-990.png 990w, /assets/help/symptom-check-in-build13.png 1320w" sizes="(max-width: 394px) calc(100vw - 44px), (max-width: 600px) 350px, (max-width: 760px) 342px, (max-width: 980px) 272px, 302px" width="1320" height="2868" loading="lazy" decoding="async" alt="Unselected Symptom Check-in form showing a time picker, symptom and injury choices, and the Save button.">
                 </a>
                 <figcaption>Record what was noticed without treating a check-in as a diagnosis or proof that treatment is safe. Fictional example.</figcaption>
               </figure>
@@ -403,7 +404,7 @@
               <figure class="help-figure">
                 <span class="sample-chip">Fictional sample data</span>
                 <a href="/assets/help/reports-build13.png" aria-label="Open the Reports screenshot at full size">
-                  <img src="/assets/help/reports-build13.png" width="1320" height="2868" loading="lazy" decoding="async" alt="Reports screen showing fictional record counts and controls for generating a date-range PDF.">
+                  <img src="/assets/help/reports-build13-480.png" srcset="/assets/help/reports-build13-480.png 480w, /assets/help/reports-build13-720.png 720w, /assets/help/reports-build13-990.png 990w, /assets/help/reports-build13.png 1320w" sizes="(max-width: 394px) calc(100vw - 44px), (max-width: 600px) 350px, (max-width: 760px) 342px, (max-width: 980px) 272px, 302px" width="1320" height="2868" loading="lazy" decoding="async" alt="Reports screen showing fictional record counts and controls for generating a date-range PDF.">
                 </a>
                 <figcaption>Choose the dates, review the counts, generate the PDF, and preview it before sharing. Fictional example.</figcaption>
               </figure>
@@ -456,7 +457,7 @@
               </details>
               <details>
                 <summary>Can I restore during first setup?</summary>
-                <p>Yes. On a fresh installation, choose <strong>Restore existing backup</strong> during setup. INR Wizard verifies and previews the backup before any journal is replaced.</p>
+                <p>Yes. On a fresh installation, choose <strong>Restore an existing backup</strong> during setup. INR Wizard verifies and previews the backup before any journal is replaced.</p>
               </details>
               <details>
                 <summary>Why is the patient identity locked after setup?</summary>
@@ -474,7 +475,7 @@
               <figure class="help-figure">
                 <span class="sample-chip">Fictional sample data</span>
                 <a href="/assets/help/backup-build13.png" aria-label="Open the Backup and restore screenshot at full size">
-                  <img src="/assets/help/backup-build13.png" width="1320" height="2868" loading="lazy" decoding="async" alt="Backup and restore screen showing encrypted manual export, restore, and automatic rolling backup controls.">
+                  <img src="/assets/help/backup-build13-480.png" srcset="/assets/help/backup-build13-480.png 480w, /assets/help/backup-build13-720.png 720w, /assets/help/backup-build13-990.png 990w, /assets/help/backup-build13.png 1320w" sizes="(max-width: 394px) calc(100vw - 44px), (max-width: 600px) 350px, (max-width: 760px) 342px, (max-width: 980px) 272px, 302px" width="1320" height="2868" loading="lazy" decoding="async" alt="Backup and restore screen showing encrypted manual export, restore, and automatic rolling backup controls.">
                 </a>
                 <figcaption>Manual export, restore, and one optional rolling encrypted backup remain separate choices. Fictional example.</figcaption>
               </figure>
@@ -499,7 +500,7 @@
               </details>
               <details>
                 <summary>The app says an outdated alarm may remain</summary>
-                <p>Keep the iPhone nearby and open INR Wizard again so it can retry removing the old alarm. Review the Alarms section under Reminder delivery. Until cleanup is confirmed, do not assume that an old alarm has been removed; if the warning continues, contact technical support.</p>
+                <p>Keep the iPhone nearby and open INR Wizard again so it can retry removing the old alarm. Review the Alarms section under Reminder notifications in Settings. Until cleanup is confirmed, do not assume that an old alarm has been removed; if the warning continues, contact technical support.</p>
               </details>
               <details>
                 <summary>The app shows “Records unavailable”</summary>
@@ -528,7 +529,7 @@
 
     <footer class="site-footer">
       <div class="footer-brand">
-        <img class="footer-icon" src="/assets/app-icon.png" alt="" width="36" height="36">
+        <img class="footer-icon" src="/assets/app-icon-144.png" alt="" width="36" height="36">
         <div><strong>INR Wizard Help Centre</strong><span>Illustrated technical help for Version 1.0</span></div>
       </div>
       <nav aria-label="Footer navigation">
